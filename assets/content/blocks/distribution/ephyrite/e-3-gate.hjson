@@ -1,0 +1,31 @@
+
+name: Quantum gate
+type: MassDriver
+
+size: 7
+health: 200000
+
+requirements: [
+  copper/150
+  lead/150
+  titanium/100
+  silicon/100
+  thorium/75
+]
+
+range: 20000
+rotateSpeed: 180
+reload: 1.2
+
+shootEffect: none
+smokeEffect: none
+itemCapacity: 150
+powerUse: 150
+
+knockback: 0
+translation: 5
+bulletSpeed: 800
+receiveEffect: none
+bulletSprite: none
+shake: 0
+shootSoundVolume: 0

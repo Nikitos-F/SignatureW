@@ -1,0 +1,12 @@
+
+name: "Ephyrite"
+description: An unprocessed energy crystal. Requires calibration.
+color: "64DBDB"
+
+flammability:  0.0
+explosiveness: 0.0
+radioactivity: 0.0
+charge:        0.8
+
+hardness: 4
+cost: 1.5

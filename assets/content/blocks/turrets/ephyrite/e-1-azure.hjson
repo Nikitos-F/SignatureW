@@ -1,0 +1,121 @@
+type: "PowerTurret"
+name: "Azure"
+description: "Using some type of direct radiation to cause debaf"
+size: 3
+
+health: 1280
+range: 312
+minRange: 40
+drawMinRange: true
+reload: 120
+cooldownTime: 110
+predictTarget: true
+recoil: 0.5
+
+shootWarmupSpeed: 0.1
+minWarmup: 0.94
+warmupMaintainTime: 120
+
+
+consumesPower: true
+consumes: {
+    power: 22
+    liquids: {
+         liquids: [
+             {
+                 liquid: "cryofluid"
+                 amount: 0.3
+                 optional: false
+             }
+         ]
+     }
+}
+
+shootSound: "explosionDull"
+shootSoundVolume: 0.5
+shootEffect: "lightningShoot"
+heatColor: "66CCFF40"
+
+drawer: {
+    type: "drawTurret"
+    parts: [
+        {
+            type: "RegionPart"
+            suffix: "-wing"
+            mirror: true
+            progress: "warmup"
+            moveRot: -40
+
+            heatColor: "66CCFF"
+            heatProgress: "recoil"
+        }
+
+    ]
+}
+
+shootY: -4
+shootEffect: {
+     type: "ParticleEffect"
+     line: true
+     particles: 15
+     cone: 360
+     lifetime: 25
+     baseLength: 0
+     length: 40
+     strokeFrom: 0.7
+     strokeTo: 0
+     lenFrom: 4
+     lenTo: 0
+     colorFrom: "53B6D7"
+     colorTo: "48BBF5"
+}
+smokeEffect: "none"
+
+shootType: {
+    type: "BasicBulletType"
+    damage: 60
+    shieldDamageMultiplier: 3.25
+    splashDamageRadius: 64
+    splashDamagePierce: true
+    splashDamage: 40
+    knockback: 2.5
+    impact: true
+    status: electrified
+    hittable: false
+    reflectable: false
+    pierceArmor: true
+    lightRadius: 0
+    hitSize: 8
+
+    width: 0
+    height: 0
+
+    speed: 30
+    lifetime: 15
+
+    hitEffect: "none"
+    despawnEffect: "none"
+
+    trailEffect: {
+        type: "ParticleEffect"
+        particles: 5
+        sizeFrom: 0
+        sizeTo: 2
+        colorFrom: "44CCFF70"
+        colorTo: "88BBFF00"
+        lifetime: 20
+        cone: 360
+    }
+    trailChance: 1
+
+}
+
+category: "turret"
+
+requirements: [
+    "silicon/250"
+    "ephyrite-1/100"
+    "plastanium/120"
+    "graphite/180"
+    "surge-alloy/120"
+]

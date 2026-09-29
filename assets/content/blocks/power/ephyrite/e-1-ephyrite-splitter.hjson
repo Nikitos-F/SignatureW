@@ -1,0 +1,98 @@
+type: NuclearReactor
+
+name: Ephyrite splitter
+description: pass
+
+size: 3
+health: 1800
+absorbLasers: true
+underBullets: false
+
+lightColor: "64DBDB"
+lightRadius: 18
+
+ambientSound: loopHum
+ambientSoundVolume: 0.26
+
+itemCapacity: 10
+liquidCapacity: 140
+itemDuration: 420
+powerProduction: 40
+
+heating: 0.008
+smokeThreshold: 0.2
+flashThreshold: 0.74
+
+explodeSound: explosionReactorNeoplasm
+explosionShake: 10
+explosionRadius: 25
+explosionDamage: 7500
+
+fuelItem: ephyrite-0
+consumes: {
+  liquid: cryofluid/0.08
+  items: [
+    ephyrite-0/1
+  ]
+}
+
+explodeEffect: {
+   "type": "multiEffect",
+   "effects": [
+     {
+           type: "WaveEffect"
+           lifetime: 25
+           strokeFrom: 12
+           strokeTo: 4
+           sizeFrom: 0
+           sizeTo: 200
+           colorFrom: "53B6D7FF"
+           colorTo: "48BBF580"
+     },
+     {
+         type: "ParticleEffect"
+         particles: 8
+         cone: 360
+         lifetime: 240
+         baseLength: 180
+         length: 35
+         sizeFrom: 120
+         sizeTo: 90
+         colorFrom: "53B6D790"
+         colorTo: "48BBF500"
+      },
+     {
+        type: "ParticleEffect"
+        particles: 18
+        cone: 360
+        lifetime: 280
+        baseLength: 220
+        length: 30
+        sizeFrom: 32
+        sizeTo: 26
+        colorFrom: "53B6D760"
+        colorTo: "48BBF500"
+     },
+     {
+         type: "ParticleEffect"
+         particles: 6
+         cone: 360
+         lifetime: 320
+         baseLength: 260
+         length: 10
+         sizeFrom: 16
+         sizeTo: 8
+         colorFrom: "53B6D7BB"
+         colorTo: "48BBF500"
+      },
+   ]
+ },
+
+requirements: [
+  "ephyrite-1/45"
+  "plastanium/180"
+  "silicon/280"
+  "surge-alloy/45"
+]
+
+category: power

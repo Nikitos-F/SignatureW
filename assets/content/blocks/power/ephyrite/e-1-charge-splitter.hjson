@@ -1,0 +1,82 @@
+type: "signatureW.blocks.power.ChargeGenerator"
+
+name: "Charge splitter"
+description: "Transmit energy by using ephyrite crystals"
+
+size: 2
+health: 380
+absorbLasers: true
+underBullets: false
+
+explosionRadius: 4
+explosionDamage: 210
+explosionShake: 0.5
+explodeEffect: {
+    "type": "multiEffect",
+    "effects": [
+      {
+         type: "ParticleEffect"
+         particles: 3
+         cone: 360
+         lifetime: 240
+         baseLength: 10
+         length: 20
+         sizeFrom: 32
+         sizeTo: 24
+         colorFrom: "53B6D780"
+         colorTo: "48BBF500"
+      },
+      {
+         type: "WaveEffect"
+         lifetime: 25
+         strokeFrom: 2
+         strokeTo: 0
+         sizeFrom: 0
+         sizeTo: 32
+         colorFrom: "53B6D7"
+         colorTo: "48BBF5"
+      },
+      {
+         type: "ParticleEffect"
+         particles: 20
+         line: true
+         lifetime: 35
+
+         strokeFrom: 4
+         strokeTo: 0
+         lenFrom: 12,
+         lenTo: 0,
+
+         baseLength: 0
+         length: 80
+
+         colorFrom: "53B6D7"
+         colorTo: "48BBF5"
+      },
+   ]
+}
+
+powerProduction: 8.1
+itemDuration: 660
+
+drawer: {
+    type: "DrawMulti"
+    drawers: [
+        {
+            type: "DrawDefault"
+        }
+        {
+            type: "DrawWarmupRegion"
+            color: "8dcfe5ff"
+        }
+    ]
+}
+
+requirements: [
+    "plastanium/65"
+    "silicon/80"
+    "ephyrite-1/15"
+    "surge-alloy/25"
+]
+
+category: "power"

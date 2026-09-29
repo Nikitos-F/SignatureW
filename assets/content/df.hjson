@@ -1,0 +1,32 @@
+type: "HeatProducer"
+name: "Phase Heater"
+description: "Produces heat using phase fabric."
+size: 2
+heatOutput: 15
+craftTime: 480
+
+requirements: [
+    "copper/30"
+]
+
+category: "crafting"
+ambientSound: "hum"
+ambientSoundVolume: 1.0
+
+consumes: {
+    items: {
+        items: ["phase-fabric/1"]
+    }
+}
+
+drawer: {
+    type: "DrawMulti"
+    drawers: [
+        {
+            type: "DrawDefault"
+        }
+        {
+            type: "DrawHeatOutput"
+        }
+    ]
+}

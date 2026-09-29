@@ -1,0 +1,32 @@
+type: "ForceProjector"
+name: "Large ephyrite wall"
+description: "Создаёт энергетический барьер, отражающий снаряды."
+
+size: 2
+health: 2080
+armor: 16
+
+shieldHealth: 6240
+radius: 16
+sides: 24
+
+
+consumesPower: true
+hasPower: true
+conductivePower: true
+outputsPower: false
+absorbLasers: true
+liquidCapacity: 72
+cooldownNormal: 3
+cooldownBrokenBase: 2
+
+consumes: {
+    power: 4
+}
+
+requirements: [
+    "ephyrite-1/8"
+    "plastanium/32"
+]
+
+category: "defense"

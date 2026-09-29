@@ -1,0 +1,102 @@
+type: "PowerTurret"
+name: "Stormer"
+description: "Four-barrel laser turret. It has a high rate of fire. The barrels fire in turn, creating a continuous stream of energy. It is effective against swarms of weak units and for suppressing shields."
+
+size: 3
+health: 1400
+range: 248
+reload: 10
+cooldownTime: 6
+predictTarget: true
+
+hasPower: true
+consumes: {
+    power: 12
+    coolant: { amount: 0.5 }
+}
+coolantMultiplier: 1.4
+
+shootSound: "shootLancer"
+shootSoundVolume: 0.8
+shootEffect: "lancerLaserShoot"
+
+recoil: 1
+recoilTime: 40
+recoils: 4
+shake: 1
+
+shoot: {
+    type: "ShootBarrel"
+    barrels: [
+        -8, -6, 0,
+         8, -6, 0,
+        -2, -2, 0,
+         2, -2, 0
+    ]
+}
+
+drawer: {
+    type: "DrawTurret"
+    parts: [
+        {
+            type: "RegionPart"
+            suffix: "-barrel-1"
+            progress: "recoil"
+            recoilIndex: 0
+            moveY: -2
+            heatColor: "66CCFF"
+            heatProgress: "recoil"
+        }
+        {
+            type: "RegionPart"
+            suffix: "-barrel-2"
+            progress: "recoil"
+            recoilIndex: 1
+            moveY: -2
+            heatColor: "66CCFF"
+            heatProgress: "recoil"
+        }
+        {
+            type: "RegionPart"
+            suffix: "-barrel-3"
+            progress: "recoil"
+            recoilIndex: 2
+            moveY: -1
+            heatColor: "66CCFF"
+            heatProgress: "recoil"
+        }
+        {
+            type: "RegionPart"
+            suffix: "-barrel-4"
+            progress: "recoil"
+            recoilIndex: 3
+            moveY: -1
+            heatColor: "66CCFF"
+            heatProgress: "recoil"
+        }
+    ]
+}
+
+heatColor: "48BBF5"
+
+shootType: {
+    type: "LaserBulletType"
+    damage: 90
+    impact: true
+    armorMultiplier: 0.9
+    hitSize: 3
+    lifetime: 10
+    length: 260
+    pierce: true
+    hitEffect: "none"
+    despawnEffect: "none"
+}
+
+category: "turret"
+
+requirements: [
+    "silicon/220"
+    "ephyrite-1/90"
+    "plastanium/160"
+    "graphite/180"
+]

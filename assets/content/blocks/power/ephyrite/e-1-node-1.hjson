@@ -1,0 +1,23 @@
+type: "PowerNode"
+name: "Ephyrite node"
+description: "Transmit energy by using ephyrite crystals"
+
+size: 1
+health: 130
+absorbLasers: true
+underBullets: false
+
+
+maxNodes: 18
+laserRange: 20
+
+laserColor1: "64DBDB80"
+laserColor2: "4A8ACA80"
+
+requirements: [
+    "plastanium/8"
+    "silicon/6"
+    "ephyrite-1/2"
+]
+
+category: "power"

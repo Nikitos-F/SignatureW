@@ -1,0 +1,25 @@
+type: "PointDefenseTurret"
+name: "Blade"
+description: "turret"
+
+size: 2
+health: 410
+range: 200
+shootLength: 1
+bulletDamage: 50
+reload: 2
+rotateSpeed: 12
+
+hasLiquid: false
+hasPower: true
+consumes: { power: 6 }
+
+color: "48BBF5"
+
+category: "turret"
+
+requirements: [
+    "silicon/90"
+    "ephyrite-1/60"
+    "plastanium/120"
+]

@@ -1,0 +1,12 @@
+
+name: "Calibrated Ephyrite"
+description: Calibrated energy crystal. Can produce and improve power
+color: "64DBDB"
+
+flammability:  0.0
+explosiveness: 0.3
+radioactivity: 0.1
+charge:        1.7
+
+hardness: 6
+cost: 5

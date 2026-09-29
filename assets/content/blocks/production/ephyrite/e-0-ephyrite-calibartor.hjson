@@ -1,0 +1,96 @@
+type: "GenericCrafter"
+
+name: Ephyrite calibrator
+description: Calibrate raw ephyrite crystals. Unfortunately not each of them is calibratable
+health: 980
+absorbLasers: true
+underBullets: false
+
+size: 3
+hasItems: true
+itemCapacity: 16
+hasPower: true
+craftTime: 320
+
+emitLight: true
+lightColor: "64DBDB"
+lightRadius: 12
+
+ambientSound: "beamLustre"
+ambientSoundVolume: 0.3
+
+consumes: {
+    power: 24
+    items: {
+        items: [ "ephyrite-0/1" ]
+    }
+    liquids: {
+            liquids: [
+                {
+                    liquid: "cryofluid"
+                    amount: 0.3
+                    optional: false
+                }
+            ]
+        }
+}
+outputItem: "ephyrite-1/1"
+
+drawer: {
+    type: "DrawMulti"
+    drawers: [
+        {
+            type: "DrawRegion"
+            suffix: "-bottom"
+
+        }
+        {
+            type: DrawLiquidTile
+            drawLiquid: "cryofluid"
+        }
+        {
+            type: "DrawDefault"
+        }
+        {
+            type: "DrawFlame"
+            flameColor: "53B6D7"
+        }
+    ]
+}
+
+craftEffect: {
+    type: "ParticleEffect"
+    particles: 35
+    cone: 360
+    lifetime: 90
+    baseLength: 35
+    length: -30
+    sizeFrom: 0
+    sizeTo: 1
+    colorFrom: "53B6D700"
+    colorTo: "48BBF525"
+    layer: 30
+}
+
+updateEffect: {
+    type: "ParticleEffect"
+    line: true
+    particles: 3
+    cone: 360
+    lifetime: 25
+    strokeFrom: 0.5
+    strokeTo: 0
+    lenFrom: 3
+    lenTo: 1
+    colorFrom: "53B6D7"
+    colorTo: "48BBF5"
+}
+
+requirements: [
+    "graphite/180"
+    "silicon/220"
+    "plastanium/120"
+    "ephyrite-0/80"
+]
+
+category: "crafting"

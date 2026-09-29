@@ -1,0 +1,96 @@
+type: "ContinuousTurret"
+name: "Whip"
+description: "Progressed version of stiletto. Powered by enormous amounts of energy can cause huge damage to high armoured units. But it's slow rotation speed may become source of problems"
+
+size: 5
+health: 4800
+range: 472
+
+
+shootWarmupSpeed: 0.035
+minWarmup: 0.9
+warmupMaintainTime: 180
+
+shootCone: 360
+rotateSpeed: 1.2
+aimChangeSpeed: 1.2
+
+shootY: 16
+shootSound: "none"
+loopSound: "beamLustre"
+loopSoundVolume: 1.0
+
+unitSort: "strongest"
+
+scaleDamageEfficiency: true
+
+consumes: {
+    power: 49
+    liquids: {
+        liquids: [
+            {
+                liquid: "cryofluid"
+                amount: 0.666
+                optional: false
+            }
+        ]
+    }
+}
+
+drawer: {
+    type: "drawTurret"
+    parts: [
+        {
+            type: "RegionPart"
+            suffix: "-mouth"
+            progress: "warmup"
+
+            moveY: -4
+        }
+        {
+            type: "RegionPart"
+            suffix: "-backer"
+            progress: "warmup"
+
+            moveY: 3.5
+
+            heatColor: "66CCFF"
+            heatProgress: "warmup"
+
+        }
+        {
+            type: "RegionPart"
+            suffix: "-top"
+        }
+        {
+            type: "RegionPart"
+            suffix: "-wing"
+            mirror: true
+            progress: "warmup"
+
+            moveY: 3
+            moveX: -2
+
+            moveRot: 18
+        }
+
+    ]
+}
+
+
+shootType: {
+    type: "PointLaserBulletType"
+    damage: 200
+    armorMultiplier: 0.7
+    hitColor: "66CCFF"
+    laserColor: "66CCFF"
+}
+
+category: "turret"
+requirements: [
+    "silicon/420"
+    "ephyrite-1/220"
+    "plastanium/220"
+    "graphite/180"
+    "surge-alloy/180"
+]

@@ -1,0 +1,12 @@
+displayName: "Signature W"
+name: "signatureW"
+
+author: "Creen & -Arlekino-"
+
+description: "Fuck yourself"
+version: 0.0.0.1
+minGameVersion: 154
+
+
+main: "signatureW.SignatureW"
+java: true

@@ -1,0 +1,20 @@
+name: "Ephyrite haze"
+type: "ParticleWeather"
+
+color: "64DBDB"
+noiseColor: "4A8ACA"
+noiseLayers: 3
+particleRegion: "particle"
+sizeMax: 12
+sizeMin: 4
+density: 5500
+opacityMultiplier: 0.5
+yspeed: 0.75
+useWindVector: false
+drawNoise: true
+
+sound: "loopThoriumReactor"
+soundVol: 1
+
+status: "ephyrite-exhaustion"
+force: 0

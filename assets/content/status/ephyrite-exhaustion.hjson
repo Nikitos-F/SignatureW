@@ -1,0 +1,39 @@
+name: "Ephyrite exhaustion"
+description: "Energy drain caused by spread of ions of ephyrite which thirsty for energy"
+color: "4A8ACA"
+
+damage: 0.15
+speedMultiplier:  0.0
+reloadMultiplier: 0.1
+
+permanent: false
+show:      true
+
+effect: {
+         type: "ParticleEffect"
+         line: true
+         particles: 5
+         lifetime: 20
+         length: 30
+         cone: 360
+         strokeFrom: 1
+         strokeTo: 0
+         lenFrom: 6
+         lenTo: 0
+         lightColor: "64DBDB"
+         colorFrom: "4A8ACA"
+         colorTo: "64DBDB"
+        }
+applyEffect:
+        {
+         type: "WaveEffect"
+         lifetime: 40
+         sizeFrom: 0
+         sizeTo: 20
+         strokeFrom: 1
+         strokeTo: 0
+         colorFrom: "66B1FF80"
+         colorTo: "66B1FF"
+        }
+
+

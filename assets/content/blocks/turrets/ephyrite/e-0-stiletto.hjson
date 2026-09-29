@@ -1,0 +1,28 @@
+type: "TractorBeamTurret"
+name: "Stiletto"
+description: ""
+
+size: 2
+health: 680
+range: 240
+rotateSpeed: 4
+
+targetGround: true
+targetAir: true
+
+hasPower: true
+consumes: { power: 5 }
+
+damage: 7
+lightColor: "66CCFF"
+laserColor: "66CCFF"
+laserWidth: 0.1
+
+category: "turret"
+
+requirements: [
+    "silicon/100"
+    "ephyrite-0/40"
+    "titanium/90"
+    "graphite/80"
+]
