@@ -1,0 +1,94 @@
+type: "GenericCrafter"
+
+name: Plsatanium сatalyst
+description: compressor using phase fabric to increase rate nad stabilize process od plastanium compression
+health: 1340
+
+absorbLasers: true
+underBullets: false
+
+size: 3
+hasItems: true
+itemCapacity: 30
+hasPower: true
+craftTime: 420
+
+ambientSound: "beamLustre"
+ambientSoundVolume: 0.3
+
+consumes: {
+    power: 22
+    items: {
+        items: ["titanium/10", "phase-fabric/1"]
+    }
+    liquids: {
+            liquids: [
+                {
+                    liquid: "oil"
+                    amount: 0.19
+                    optional: false
+                }
+            ]
+        }
+}
+outputItem: "plastanium/13"
+
+
+emitLight: true
+lightColor: "8DA65C"
+drawer: {
+    type: "DrawMulti"
+    drawers: [
+        {
+            type: "DrawDefault"
+        }
+        {
+            type: "DrawFlame"
+            flameColor: "EDF3A9"
+            lightRadius: 2
+        }
+    ]
+}
+
+craftEffect: {
+    type: "ParticleEffect"
+    line: true
+    particles: 6
+    cone: 360
+    lifetime: 20
+    strokeFrom: 1
+    strokeTo: 0
+    lenFrom: 5
+    lenTo: 1
+    baseLength: 0
+    length: 20
+    colorFrom: "8DA65Ca0"
+    colorTo: "EDF3A925"
+}
+
+
+updateEffect: {
+    type: "ParticleEffect"
+    line: true
+    particles: 1
+    cone: 360
+    lifetime: 25
+    strokeFrom: 0.5
+    strokeTo: 0
+    lenFrom: 3
+    lenTo: 1
+    baseLength: 0
+    length: 8
+    colorFrom: "8DA65Ca0"
+    colorTo: "EDF3A925"
+}
+updateEffectChance: 0.005
+
+requirements: [
+    "phase-fabric/160"
+    "silicon/220"
+    "plastanium/220"
+    "ephyrite-1/80"
+]
+
+category: "crafting"

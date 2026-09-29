@@ -12,8 +12,8 @@ minWarmup: 0.9
 warmupMaintainTime: 180
 
 shootCone: 360
-rotateSpeed: 1.2
-aimChangeSpeed: 1.2
+rotateSpeed: 1.8
+aimChangeSpeed: 1.8
 
 shootY: 16
 shootSound: "none"
@@ -80,17 +80,16 @@ drawer: {
 
 shootType: {
     type: "PointLaserBulletType"
-    damage: 200
+    damage: 170
     armorMultiplier: 0.7
     hitColor: "66CCFF"
-    laserColor: "66CCFF"
 }
 
 category: "turret"
 requirements: [
     "silicon/420"
     "ephyrite-1/220"
-    "plastanium/220"
+    "plastanium/260"
     "graphite/180"
-    "surge-alloy/180"
+    "surge-alloy/280"
 ]

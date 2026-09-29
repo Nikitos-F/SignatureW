@@ -10,7 +10,6 @@ bulletDamage: 50
 reload: 2
 rotateSpeed: 12
 
-hasLiquid: false
 hasPower: true
 consumes: { power: 6 }
 

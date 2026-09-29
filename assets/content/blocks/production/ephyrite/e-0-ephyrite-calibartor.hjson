@@ -10,11 +10,11 @@ size: 3
 hasItems: true
 itemCapacity: 16
 hasPower: true
-craftTime: 320
+craftTime: 300
 
 emitLight: true
 lightColor: "64DBDB"
-lightRadius: 12
+
 
 ambientSound: "beamLustre"
 ambientSoundVolume: 0.3
@@ -54,6 +54,7 @@ drawer: {
         {
             type: "DrawFlame"
             flameColor: "53B6D7"
+            lightRadius: 4
         }
     ]
 }
