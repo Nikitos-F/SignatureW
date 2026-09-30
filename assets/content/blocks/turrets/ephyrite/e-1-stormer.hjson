@@ -17,7 +17,7 @@ consumes: {
 coolantMultiplier: 1.4
 
 shootSound: "shootLancer"
-shootSoundVolume: 0.8
+shootSoundVolume: 0.6
 shootEffect: "lancerLaserShoot"
 
 recoil: 1

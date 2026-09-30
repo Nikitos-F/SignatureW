@@ -18,7 +18,7 @@ aimChangeSpeed: 1.8
 shootY: 16
 shootSound: "none"
 loopSound: "beamLustre"
-loopSoundVolume: 1.0
+loopSoundVolume: 2.5
 
 unitSort: "strongest"
 
@@ -82,7 +82,25 @@ shootType: {
     type: "PointLaserBulletType"
     damage: 170
     armorMultiplier: 0.7
-    hitColor: "66CCFF"
+    shake: 0.3
+    hitColor: "48bbf5"
+    color: "48bbf5"
+    beamEffect: [
+        "colorTrail"
+        {
+            type: "ParticleEffect"
+            particles: 6
+            cone: 360
+            lifetime: 15
+            baseLength: 4
+            length: 24
+            sizeFrom: 0.5
+            sizeTo: 0
+            colorFrom: "48BBF555"
+            colorTo: "53B6D700"
+        }
+    ]
+
 }
 
 category: "turret"
