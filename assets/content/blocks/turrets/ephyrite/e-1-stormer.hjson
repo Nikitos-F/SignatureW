@@ -5,16 +5,17 @@ description: "Four-barrel laser turret. It has a high rate of fire. The barrels 
 size: 3
 health: 1400
 range: 248
-reload: 10
+reload: 15
 cooldownTime: 6
 predictTarget: true
+targetAir: false
+collidesAir: false
 
-hasPower: true
 consumes: {
     power: 12
     coolant: { amount: 0.5 }
 }
-coolantMultiplier: 1.4
+coolantMultiplier: 1.35
 
 shootSound: "shootLancer"
 shootSoundVolume: 0.6
@@ -81,13 +82,12 @@ heatColor: "48BBF5"
 
 shootType: {
     type: "LaserBulletType"
-    damage: 90
+    damage: 70
     impact: true
     armorMultiplier: 0.9
     hitSize: 3
     lifetime: 10
     length: 260
-    pierce: true
     hitEffect: "none"
     despawnEffect: "none"
 }

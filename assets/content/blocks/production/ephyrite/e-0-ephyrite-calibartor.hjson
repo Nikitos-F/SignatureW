@@ -10,7 +10,7 @@ size: 3
 hasItems: true
 itemCapacity: 16
 hasPower: true
-craftTime: 300
+craftTime: 210
 
 emitLight: true
 lightColor: "64DBDB"
@@ -42,7 +42,6 @@ drawer: {
         {
             type: "DrawRegion"
             suffix: "-bottom"
-
         }
         {
             type: DrawLiquidTile

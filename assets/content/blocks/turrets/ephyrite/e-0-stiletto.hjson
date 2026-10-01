@@ -11,9 +11,9 @@ targetGround: true
 targetAir: true
 
 hasPower: true
-consumes: { power: 5 }
+consumes: { power: 5.5 }
 
-damage: 7
+damage: 5
 lightColor: "66CCFF"
 laserColor: "66CCFF"
 laserWidth: 0.1

@@ -6,7 +6,6 @@ size: 5
 health: 4800
 range: 472
 
-
 shootWarmupSpeed: 0.035
 minWarmup: 0.9
 warmupMaintainTime: 180
@@ -18,7 +17,7 @@ aimChangeSpeed: 1.8
 shootY: 16
 shootSound: "none"
 loopSound: "beamLustre"
-loopSoundVolume: 2.5
+loopSoundVolume: 2
 
 unitSort: "strongest"
 
@@ -30,7 +29,7 @@ consumes: {
         liquids: [
             {
                 liquid: "cryofluid"
-                amount: 0.666
+                amount: 1
                 optional: false
             }
         ]
@@ -44,19 +43,15 @@ drawer: {
             type: "RegionPart"
             suffix: "-mouth"
             progress: "warmup"
-
             moveY: -4
         }
         {
             type: "RegionPart"
             suffix: "-backer"
             progress: "warmup"
-
             moveY: 3.5
-
             heatColor: "66CCFF"
             heatProgress: "warmup"
-
         }
         {
             type: "RegionPart"
@@ -67,20 +62,17 @@ drawer: {
             suffix: "-wing"
             mirror: true
             progress: "warmup"
-
             moveY: 3
             moveX: -2
-
             moveRot: 18
         }
-
     ]
 }
 
 
 shootType: {
     type: "PointLaserBulletType"
-    damage: 170
+    damage: 150
     armorMultiplier: 0.7
     shake: 0.3
     hitColor: "48bbf5"
@@ -100,14 +92,13 @@ shootType: {
             colorTo: "53B6D700"
         }
     ]
-
 }
 
 category: "turret"
 requirements: [
     "silicon/420"
     "ephyrite-1/220"
-    "plastanium/260"
-    "graphite/180"
+    "plastanium/280"
+    "phase-fabric/160"
     "surge-alloy/280"
 ]

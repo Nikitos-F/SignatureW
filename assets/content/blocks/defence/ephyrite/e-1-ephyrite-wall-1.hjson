@@ -1,26 +1,21 @@
 type: "ForceProjector"
 name: "Ephyrite wall"
-description: "Создаёт энергетический барьер"
+description: ""
 
 size: 1
-health: 1040
+health: 510
 armor: 16
 
-shieldHealth: 1560
+shieldHealth: 1020
 radius: 12
 sides: 24
 
-
-consumesPower: true
-hasPower: true
 conductivePower: true
 outputsPower: false
 absorbLasers: true
 liquidCapacity: 18
-cooldownNormal: 1
-cooldownBrokenBase: 0.8
-
-
+cooldownNormal: 0.75
+cooldownBrokenBase: 0.4
 
 consumes: {
     power: 1
@@ -30,5 +25,4 @@ requirements: [
     "ephyrite-1/2"
     "plastanium/8"
 ]
-
 category: "defense"
