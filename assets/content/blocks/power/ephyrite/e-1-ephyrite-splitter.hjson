@@ -15,26 +15,6 @@ requirements: [
   "surge-alloy/85"
 ]
 
-
-
-
-lightColor: "64DBDB"
-lightRadius: 18
-
-itemCapacity: 10
-liquidCapacity: 120
-itemDuration: 420
-powerProduction: 40
-
-heating: 0.006
-smokeThreshold: 0.2
-flashThreshold: 0.74
-
-explodeSound: explosionReactorNeoplasm
-explosionShake: 10
-explosionRadius: 25
-explosionDamage: 7500
-
 fuelItem: ephyrite-0
 consumes: {
   liquid: cryofluid/0.08
@@ -42,6 +22,23 @@ consumes: {
     ephyrite-0/1
   ]
 }
+
+lightColor: "64DBDB"
+lightRadius: 18
+
+itemCapacity: 10
+liquidCapacity: 120
+itemDuration: 420
+powerProduction: 48
+
+heating: 0.005
+smokeThreshold: 0.15
+flashThreshold: 0.74
+
+explodeSound: explosionReactorNeoplasm
+explosionShake: 10
+explosionRadius: 25
+explosionDamage: 7500
 
 explodeEffect: {
    "type": "multiEffect",
