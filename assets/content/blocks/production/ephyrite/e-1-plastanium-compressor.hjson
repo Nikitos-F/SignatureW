@@ -1,19 +1,22 @@
 type: "GenericCrafter"
 
-health: 1340
 
 absorbLasers: true
 underBullets: false
 
+health: 1340
 size: 3
-hasItems: true
-itemCapacity: 30
-hasPower: true
+
+category: "crafting"
+requirements: [
+    "phase-fabric/120"
+    "silicon/220"
+    "plastanium/220"
+    "ephyrite-1/80"
+]
+
 craftTime: 420
-
-ambientSound: "beamLustre"
-ambientSoundVolume: 0.3
-
+itemCapacity: 30
 consumes: {
     power: 22
     items: {
@@ -32,8 +35,6 @@ consumes: {
 outputItem: "plastanium/13"
 
 
-emitLight: true
-lightColor: "8DA65C"
 drawer: {
     type: "DrawMulti"
     drawers: [
@@ -43,7 +44,7 @@ drawer: {
         {
             type: "DrawFlame"
             flameColor: "EDF3A9"
-            lightRadius: 2
+            lightRadius: 3
         }
     ]
 }
@@ -64,6 +65,7 @@ craftEffect: {
     colorTo: "EDF3A925"
 }
 
+updateEffectChance: 0.005
 updateEffect: {
     type: "ParticleEffect"
     line: true
@@ -79,13 +81,6 @@ updateEffect: {
     colorFrom: "8DA65Ca0"
     colorTo: "EDF3A925"
 }
-updateEffectChance: 0.005
 
-requirements: [
-    "phase-fabric/120"
-    "silicon/220"
-    "plastanium/220"
-    "ephyrite-1/80"
-]
-
-category: "crafting"
+ambientSound: "beamLustre"
+ambientSoundVolume: 0.3

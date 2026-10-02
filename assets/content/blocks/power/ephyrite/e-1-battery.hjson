@@ -1,0 +1,25 @@
+type: "Battery"
+
+
+absorbLasers: true
+underBullets: false
+
+health: 480
+size: 2
+
+category: "power"
+requirements: [
+    "lead/70"
+    "titanium/50"
+    "silicon/30"
+    "ephyrite-1/10"
+]
+
+
+emptyLightColor: "4E4E58"
+fullLightColor: "63DBDA"
+baseExplosiveness: 7
+
+consumes: {
+    powerBuffered: 70000
+}

@@ -1,13 +1,40 @@
 type: "signatureW.blocks.power.ChargeGenerator"
 
-size: 2
-health: 380
+
 absorbLasers: true
 underBullets: false
 
-explosionRadius: 4
-explosionDamage: 210
-explosionShake: 0.5
+health: 380
+size: 2
+
+category: "power"
+requirements: [
+    "plastanium/65"
+    "silicon/80"
+    "ephyrite-1/15"
+    "surge-alloy/25"
+]
+
+
+powerProduction: 8.1
+itemDuration: 660
+
+drawer: {
+    type: "DrawMulti"
+    drawers: [
+        {
+            type: "DrawDefault"
+        }
+        {
+            type: "DrawWarmupRegion"
+            color: "8dcfe5ff"
+        }
+    ]
+}
+
+explosionRadius: 3
+explosionDamage: 180
+explosionShake: 1
 explodeEffect: {
     "type": "multiEffect",
     "effects": [
@@ -53,27 +80,3 @@ explodeEffect: {
    ]
 }
 
-powerProduction: 8.1
-itemDuration: 660
-
-drawer: {
-    type: "DrawMulti"
-    drawers: [
-        {
-            type: "DrawDefault"
-        }
-        {
-            type: "DrawWarmupRegion"
-            color: "8dcfe5ff"
-        }
-    ]
-}
-
-requirements: [
-    "plastanium/65"
-    "silicon/80"
-    "ephyrite-1/15"
-    "surge-alloy/25"
-]
-
-category: "power"

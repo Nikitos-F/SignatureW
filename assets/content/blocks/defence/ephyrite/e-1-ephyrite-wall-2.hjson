@@ -1,28 +1,27 @@
 type: "ForceProjector"
 
+
+absorbLasers: true
+underBullets: false
+
 size: 2
 health: 2040
-armor: 16
 
-shieldHealth: 4080
-radius: 16
-sides: 24
-
-conductivePower: true
-outputsPower: false
-absorbLasers: true
-
-liquidCapacity: 72
-cooldownNormal: 1.5
-cooldownBrokenBase: 0.5
-
-consumes: {
-    power: 4
-}
-
+category: "defense"
 requirements: [
     "ephyrite-1/8"
     "plastanium/32"
 ]
 
-category: "defense"
+consumes: {
+    power: 4
+}
+
+armor: 16
+shieldHealth: 4080
+radius: 16
+sides: 24
+
+conductivePower: true
+cooldownNormal: 1.25
+cooldownBrokenBase: 2

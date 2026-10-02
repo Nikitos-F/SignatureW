@@ -1,22 +1,32 @@
 type: NuclearReactor
 
-size: 3
-health: 1800
+
 absorbLasers: true
 underBullets: false
+
+size: 3
+health: 2800
+
+category: power
+requirements: [
+  "ephyrite-1/65"
+  "plastanium/180"
+  "silicon/280"
+  "surge-alloy/85"
+]
+
+
+
 
 lightColor: "64DBDB"
 lightRadius: 18
 
-ambientSound: loopHum
-ambientSoundVolume: 0.26
-
 itemCapacity: 10
-liquidCapacity: 140
+liquidCapacity: 120
 itemDuration: 420
 powerProduction: 40
 
-heating: 0.008
+heating: 0.006
 smokeThreshold: 0.2
 flashThreshold: 0.74
 
@@ -81,15 +91,9 @@ explodeEffect: {
          sizeTo: 8
          colorFrom: "53B6D7BB"
          colorTo: "48BBF500"
-      },
+      }
    ]
- },
+}
 
-requirements: [
-  "ephyrite-1/45"
-  "plastanium/180"
-  "silicon/280"
-  "surge-alloy/45"
-]
-
-category: power
+ambientSound: loopHum
+ambientSoundVolume: 0.26

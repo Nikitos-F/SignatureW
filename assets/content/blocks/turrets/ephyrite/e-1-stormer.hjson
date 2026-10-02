@@ -1,13 +1,19 @@
 type: "PowerTurret"
 
+
+absorbLasers: true
+underBullets: false
+
+health: 1920
 size: 3
-health: 1420
-range: 248
-reload: 15
-cooldownTime: 6
-predictTarget: true
-targetAir: false
-collidesAir: false
+
+category: "turret"
+requirements: [
+    "silicon/220"
+    "ephyrite-1/90"
+    "plastanium/160"
+    "graphite/180"
+]
 
 consumes: {
     power: 12
@@ -15,9 +21,29 @@ consumes: {
 }
 coolantMultiplier: 1.35
 
-shootSound: "shootLancer"
-shootSoundVolume: 0.6
-shootEffect: "lancerLaserShoot"
+
+targetGround: true
+targetAir: false
+
+rotateSpeed: 5
+range: 248
+
+reload: 15
+cooldownTime: 6
+predictTarget: true
+
+shootType: {
+    type: "LaserBulletType"
+    damage: 70
+    impact: true
+    armorMultiplier: 0.9
+    hitSize: 3
+    lifetime: 10
+    length: 260
+    hitEffect: "none"
+    despawnEffect: "none"
+    collidesAir: false
+}
 
 recoil: 1
 recoilTime: 40
@@ -34,6 +60,8 @@ shoot: {
     ]
 }
 
+
+heatColor: "48BBF5"
 drawer: {
     type: "DrawTurret"
     parts: [
@@ -76,25 +104,6 @@ drawer: {
     ]
 }
 
-heatColor: "48BBF5"
-
-shootType: {
-    type: "LaserBulletType"
-    damage: 70
-    impact: true
-    armorMultiplier: 0.9
-    hitSize: 3
-    lifetime: 10
-    length: 260
-    hitEffect: "none"
-    despawnEffect: "none"
-}
-
-category: "turret"
-
-requirements: [
-    "silicon/220"
-    "ephyrite-1/90"
-    "plastanium/160"
-    "graphite/180"
-]
+shootSound: "shootLancer"
+shootSoundVolume: 0.6
+shootEffect: "lancerLaserShoot"

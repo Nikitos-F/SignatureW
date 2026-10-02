@@ -1,22 +1,22 @@
 type: "GenericCrafter"
 
-health: 980
+
 absorbLasers: true
 underBullets: false
 
+health: 1180
 size: 3
-hasItems: true
-itemCapacity: 16
-hasPower: true
+
+category: "crafting"
+requirements: [
+    "graphite/180"
+    "silicon/220"
+    "plastanium/120"
+    "ephyrite-0/80"
+]
+
+
 craftTime: 210
-
-emitLight: true
-lightColor: "64DBDB"
-
-
-ambientSound: "beamLustre"
-ambientSoundVolume: 0.3
-
 consumes: {
     power: 24
     items: {
@@ -33,6 +33,7 @@ consumes: {
         }
 }
 outputItem: "ephyrite-1/1"
+
 
 drawer: {
     type: "DrawMulti"
@@ -84,11 +85,5 @@ updateEffect: {
     colorTo: "48BBF5"
 }
 
-requirements: [
-    "graphite/180"
-    "silicon/220"
-    "plastanium/120"
-    "ephyrite-0/80"
-]
-
-category: "crafting"
+ambientSound: "beamLustre"
+ambientSoundVolume: 0.3

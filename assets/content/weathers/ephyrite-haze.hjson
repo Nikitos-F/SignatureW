@@ -1,19 +1,24 @@
 type: "ParticleWeather"
 
-color: "64DBDB"
-noiseColor: "4A8ACA"
-noiseLayers: 3
-particleRegion: "particle"
-sizeMax: 12
-sizeMin: 4
-density: 5500
-opacityMultiplier: 0.5
-yspeed: 0.75
-useWindVector: false
-drawNoise: true
 
-sound: "loopThoriumReactor"
-soundVol: 1
+color: "64DBDB"
+particleRegion: "particle"
+density: 8000
+sizeMax: 6
+sizeMin: 1
+yspeed: 0.25
+minAlpha: 0.2
+force: 0
+
+
+drawNoise: true
+noiseColor: "4A8ACA"
+useWindVector: false
+noiseLayers: 3
+noiseLayerSpeedM: 0.1
+opacityMultiplier: 0.45
+
+soundVol: 0.25
+sound: "loopGlow"
 
 status: "ephyrite-exhaustion"
-force: 0

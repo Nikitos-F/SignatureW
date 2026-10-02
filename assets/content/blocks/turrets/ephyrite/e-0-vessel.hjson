@@ -1,23 +1,65 @@
 type: "PowerTurret"
 
-size: 2
-health: 980
-range: 208
-reload: 84
-cooldownTime: 84
-targetAir: false
 
-hasPower: true
+absorbLasers: true
+underBullets: false
+
+health: 980
+size: 2
+
+category: "turret"
+requirements: [
+    "silicon/80"
+    "ephyrite-0/75"
+    "titanium/120"
+]
+
 consumes: {
     power: 6
     coolant: { amount: 0.2 }
 }
 
-shootSound: "shootArc"
-shootSoundVolume: 2.2
-shootEffect: "lightningShoot"
-heatColor: "66CCFF"
 
+targetGround: true
+targetAir: true
+
+rotateSpeed: 5
+range: 200
+reload: 84
+cooldownTime: 84
+
+
+shootType: {
+    type: "LightningBulletType"
+
+    damage: 40
+    lightningLength: 30
+    lightningDamage: 25
+    lightningColor: "66CCFF"
+
+    collidesAir: false
+    collidesGround: true
+
+    lightning: 2
+    lightningCone: 30
+
+    fragBullets: 6
+    fragSpread: 10
+    fragRandomSpread: 0
+    fragBullet: {
+        type: "LightningBulletType"
+        damage: 10
+        lightningLength: 16
+        lightningColor: "88EEFF"
+    }
+
+    hitEffect: "hitLancer"
+    shootEffect: "lightningShoot"
+
+}
+
+
+heatColor: "66CCFF"
 drawer: {
     type: "DrawTurret"
     parts: [
@@ -31,33 +73,7 @@ drawer: {
     ]
 }
 
-shootType: {
-    type: "LightningBulletType"
-    damage: 40
-    lightningLength: 30
-    lightningDamage: 25
-    lightningColor: "66CCFF"
-    collidesAir: true
-    collidesGround: true
-    hitEffect: "hitLancer"
-    shootEffect: "lightningShoot"
-    lightning: 2
-    lightningCone: 30
-    fragBullet: {
-        type: "LightningBulletType"
-        damage: 10
-        lightningLength: 16
-        lightningColor: "88EEFF"
-    }
-    fragBullets: 6
-    fragSpread: 10
-    fragRandomSpread: 0
-}
+shootSound: "shootArc"
+shootSoundVolume: 2.2
+shootEffect: "lightningShoot"
 
-category: "turret"
-
-requirements: [
-    "silicon/80"
-    "ephyrite-0/75"
-    "titanium/120"
-]

@@ -1,26 +1,31 @@
 type: "TractorBeamTurret"
 
+
+absorbLasers: true
+underBullets: false
+
+health: 840
 size: 2
-health: 680
-range: 240
-rotateSpeed: 4
-
-targetGround: true
-targetAir: true
-
-hasPower: true
-consumes: { power: 5.5 }
-
-damage: 5
-lightColor: "66CCFF"
-laserColor: "66CCFF"
-laserWidth: 0.1
 
 category: "turret"
-
 requirements: [
     "silicon/100"
     "ephyrite-0/40"
     "titanium/90"
     "graphite/80"
 ]
+
+consumes: {
+    power: 5.5
+}
+
+
+targetGround: true
+targetAir: true
+
+range: 216
+rotateSpeed: 5
+
+damage: 5
+laserWidth: 0.1
+

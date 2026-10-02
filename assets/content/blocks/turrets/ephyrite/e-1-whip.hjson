@@ -1,25 +1,20 @@
 type: "ContinuousTurret"
 
-size: 5
+
+absorbLasers: true
+underBullets: false
+
 health: 4800
-range: 472
+size: 5
 
-shootWarmupSpeed: 0.035
-minWarmup: 0.9
-warmupMaintainTime: 180
-
-shootCone: 360
-rotateSpeed: 1.8
-aimChangeSpeed: 1.8
-
-shootY: 16
-shootSound: "none"
-loopSound: "beamLustre"
-loopSoundVolume: 2
-
-unitSort: "strongest"
-
-scaleDamageEfficiency: true
+category: "turret"
+requirements: [
+    "silicon/420"
+    "ephyrite-1/220"
+    "plastanium/280"
+    "phase-fabric/160"
+    "surge-alloy/280"
+]
 
 consumes: {
     power: 49
@@ -32,6 +27,44 @@ consumes: {
             }
         ]
     }
+}
+
+targetGround: true
+targetAir: true
+
+predictTarget: true
+unitSort: "strongest"
+
+range: 472
+rotateSpeed: 1.8
+aimChangeSpeed: 1.8
+
+shootWarmupSpeed: 0.035
+minWarmup: 0.9
+warmupMaintainTime: 180
+
+shootType: {
+    type: "PointLaserBulletType"
+    damage: 150
+    armorMultiplier: 0.7
+    shake: 0.3
+    hitColor: "48bbf5"
+    color: "48bbf5"
+    beamEffect: [
+        "colorTrail"
+        {
+            type: "ParticleEffect"
+            particles: 6
+            cone: 360
+            lifetime: 15
+            baseLength: 4
+            length: 24
+            sizeFrom: 0.5
+            sizeTo: 0
+            colorFrom: "48BBF555"
+            colorTo: "53B6D700"
+        }
+    ]
 }
 
 drawer: {
@@ -67,36 +100,11 @@ drawer: {
     ]
 }
 
+shootY: 16
+shootSound: "none"
+loopSound: "beamLustre"
+loopSoundVolume: 2
 
-shootType: {
-    type: "PointLaserBulletType"
-    damage: 150
-    armorMultiplier: 0.7
-    shake: 0.3
-    hitColor: "48bbf5"
-    color: "48bbf5"
-    beamEffect: [
-        "colorTrail"
-        {
-            type: "ParticleEffect"
-            particles: 6
-            cone: 360
-            lifetime: 15
-            baseLength: 4
-            length: 24
-            sizeFrom: 0.5
-            sizeTo: 0
-            colorFrom: "48BBF555"
-            colorTo: "53B6D700"
-        }
-    ]
-}
 
-category: "turret"
-requirements: [
-    "silicon/420"
-    "ephyrite-1/220"
-    "plastanium/280"
-    "phase-fabric/160"
-    "surge-alloy/280"
-]
+
+

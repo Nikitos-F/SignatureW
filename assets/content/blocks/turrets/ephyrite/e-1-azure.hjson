@@ -1,21 +1,21 @@
 type: "PowerTurret"
-size: 3
+
+
+absorbLasers: true
+underBullets: false
 
 health: 1280
-range: 312
-minRange: 48
-drawMinRange: true
-reload: 140
-cooldownTime: 130
-predictTarget: true
-recoil: 0.25
+size: 3
 
-shootWarmupSpeed: 0.1
-minWarmup: 0.94
-warmupMaintainTime: 130
+category: "turret"
+requirements: [
+    "silicon/250"
+    "ephyrite-1/100"
+    "plastanium/120"
+    "graphite/180"
+    "surge-alloy/120"
+]
 
-
-consumesPower: true
 consumes: {
     power: 22
     liquids: {
@@ -29,45 +29,24 @@ consumes: {
      }
 }
 
-shootSound: "explosionDull"
-shootSoundVolume: 0.4
-shootEffect: "lightningShoot"
-heatColor: "66CCFF40"
 
-drawer: {
-    type: "drawTurret"
-    parts: [
-        {
-            type: "RegionPart"
-            suffix: "-wing"
-            mirror: true
-            progress: "warmup"
-            moveRot: -40
+targetGround: true
+targetAir: true
 
-            heatColor: "66CCFF"
-            heatProgress: "recoil"
-        }
+predictTarget: true
 
-    ]
-}
+range: 312
+minRange: 48
+drawMinRange: true
+rotateSpeed: 5
 
-shootY: -4
-shootEffect: {
-     type: "ParticleEffect"
-     line: true
-     particles: 15
-     cone: 360
-     lifetime: 20
-     baseLength: 0
-     length: 40
-     strokeFrom: 0.7
-     strokeTo: 0
-     lenFrom: 4
-     lenTo: 0
-     colorFrom: "53B6D7"
-     colorTo: "48BBF5"
-}
-smokeEffect: "none"
+reload: 140
+cooldownTime: 130
+recoil: 0.25
+
+shootWarmupSpeed: 0.1
+minWarmup: 0.94
+warmupMaintainTime: 130
 
 shootType: {
     type: "BasicBulletType"
@@ -108,12 +87,44 @@ shootType: {
 
 }
 
-category: "turret"
+heatColor: "66CCFF"
+drawer: {
+    type: "drawTurret"
+    parts: [
+        {
+            type: "RegionPart"
+            suffix: "-wing"
+            mirror: true
+            progress: "warmup"
+            moveRot: -40
 
-requirements: [
-    "silicon/250"
-    "ephyrite-1/100"
-    "plastanium/120"
-    "graphite/180"
-    "surge-alloy/120"
-]
+            heatColor: "66CCFF"
+            heatProgress: "recoil"
+        }
+
+    ]
+}
+
+shootY: -4
+shootEffect: {
+     type: "ParticleEffect"
+     line: true
+     particles: 15
+     cone: 360
+     lifetime: 20
+     baseLength: 0
+     length: 40
+     strokeFrom: 0.7
+     strokeTo: 0
+     lenFrom: 4
+     lenTo: 0
+     colorFrom: "53B6D7"
+     colorTo: "48BBF5"
+}
+
+smokeEffect: "none"
+
+
+shootSound: "explosionDull"
+shootSoundVolume: 0.4
+shootEffect: "lightningShoot"

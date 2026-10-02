@@ -1,10 +1,18 @@
 type: "PowerNode"
 
-size: 1
-health: 130
+
 absorbLasers: true
 underBullets: false
 
+health: 130
+size: 1
+
+category: "power"
+requirements: [
+    "plastanium/8"
+    "silicon/6"
+    "ephyrite-1/2"
+]
 
 maxNodes: 18
 laserRange: 20
@@ -12,10 +20,3 @@ laserRange: 20
 laserColor1: "64DBDB80"
 laserColor2: "4A8ACA80"
 
-requirements: [
-    "plastanium/8"
-    "silicon/6"
-    "ephyrite-1/2"
-]
-
-category: "power"

@@ -1,22 +1,32 @@
 type: "PointDefenseTurret"
 
+
+absorbLasers: true
+underBullets: false
+
+health: 910
 size: 2
-health: 610
-range: 200
-shootLength: 1
-bulletDamage: 50
-reload: 2
-rotateSpeed: 12
-
-hasPower: true
-consumes: { power: 6 }
-
-color: "48BBF5"
 
 category: "turret"
-
 requirements: [
     "silicon/90"
     "ephyrite-1/60"
     "plastanium/120"
 ]
+
+consumes: {
+    power: 6
+}
+
+
+range: 200
+rotateSpeed: 12
+
+shootLength: 1
+bulletDamage: 50
+
+reload: 2
+
+
+color: "48BBF5"
+
