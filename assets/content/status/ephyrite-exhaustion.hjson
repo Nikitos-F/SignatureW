@@ -1,5 +1,3 @@
-name: "Ephyrite exhaustion"
-description: "Energy drain caused by spread of ions of ephyrite which thirsty for energy"
 color: "4A8ACA"
 
 damage: 0.15

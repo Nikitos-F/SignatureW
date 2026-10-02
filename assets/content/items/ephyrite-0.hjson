@@ -1,6 +1,3 @@
-
-name: "Ephyrite"
-description: An unprocessed energy crystal. Requires calibration.
 color: "64DBDB"
 
 flammability:  0.0

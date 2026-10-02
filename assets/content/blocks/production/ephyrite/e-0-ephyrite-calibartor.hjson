@@ -1,7 +1,5 @@
 type: "GenericCrafter"
 
-name: Ephyrite calibrator
-description: Calibrate raw ephyrite crystals. Unfortunately not each of them is calibratable
 health: 980
 absorbLasers: true
 underBullets: false

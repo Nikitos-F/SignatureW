@@ -1,7 +1,5 @@
 type: "GenericCrafter"
 
-name: Plsatanium сatalyst
-description: compressor using phase fabric to increase rate nad stabilize process od plastanium compression
 health: 1340
 
 absorbLasers: true
@@ -66,7 +64,6 @@ craftEffect: {
     colorTo: "EDF3A925"
 }
 
-
 updateEffect: {
     type: "ParticleEffect"
     line: true
@@ -85,7 +82,7 @@ updateEffect: {
 updateEffectChance: 0.005
 
 requirements: [
-    "phase-fabric/160"
+    "phase-fabric/120"
     "silicon/220"
     "plastanium/220"
     "ephyrite-1/80"

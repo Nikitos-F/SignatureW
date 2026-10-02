@@ -1,6 +1,4 @@
 type: "TractorBeamTurret"
-name: "Stiletto"
-description: ""
 
 size: 2
 health: 680

@@ -1,6 +1,4 @@
 type: "ForceProjector"
-name: "Large ephyrite wall"
-description: ""
 
 size: 2
 health: 2040
@@ -13,6 +11,7 @@ sides: 24
 conductivePower: true
 outputsPower: false
 absorbLasers: true
+
 liquidCapacity: 72
 cooldownNormal: 1.5
 cooldownBrokenBase: 0.5

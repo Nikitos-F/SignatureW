@@ -1,9 +1,7 @@
 type: "PointDefenseTurret"
-name: "Blade"
-description: "turret"
 
 size: 2
-health: 410
+health: 610
 range: 200
 shootLength: 1
 bulletDamage: 50

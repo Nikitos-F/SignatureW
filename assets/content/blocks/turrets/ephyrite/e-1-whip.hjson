@@ -1,6 +1,4 @@
 type: "ContinuousTurret"
-name: "Whip"
-description: "Progressed version of stiletto. Powered by enormous amounts of energy can cause huge damage to high armoured units. But it's slow rotation speed may become source of problems"
 
 size: 5
 health: 4800

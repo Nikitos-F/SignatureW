@@ -1,9 +1,7 @@
 type: "PowerTurret"
-name: "Stormer"
-description: "Four-barrel laser turret. It has a high rate of fire. The barrels fire in turn, creating a continuous stream of energy. It is effective against swarms of weak units and for suppressing shields."
 
 size: 3
-health: 1400
+health: 1420
 range: 248
 reload: 15
 cooldownTime: 6

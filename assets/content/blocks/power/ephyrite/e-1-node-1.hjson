@@ -1,6 +1,4 @@
 type: "PowerNode"
-name: "Ephyrite node"
-description: "Transmit energy by using ephyrite crystals"
 
 size: 1
 health: 130

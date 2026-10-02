@@ -1,6 +1,4 @@
 type: "PowerTurret"
-name: "Vessel"
-description: "Discharge put into resonant crystals cause powerful energy strike"
 
 size: 2
 health: 980

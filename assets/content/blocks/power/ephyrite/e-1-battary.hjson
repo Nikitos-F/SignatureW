@@ -1,6 +1,4 @@
 type: "Battery"
-name: "Ephyre battary"
-description: ""
 
 size: 2
 health: 180

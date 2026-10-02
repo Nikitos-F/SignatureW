@@ -1,8 +1,5 @@
 type: NuclearReactor
 
-name: Ephyrite splitter
-description: pass
-
 size: 3
 health: 1800
 absorbLasers: true

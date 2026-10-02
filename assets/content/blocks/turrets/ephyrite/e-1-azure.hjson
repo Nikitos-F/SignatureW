@@ -1,20 +1,18 @@
 type: "PowerTurret"
-name: "Azure"
-description: "Using some type of direct radiation to cause debaf"
 size: 3
 
 health: 1280
 range: 312
-minRange: 40
+minRange: 48
 drawMinRange: true
-reload: 120
-cooldownTime: 110
+reload: 140
+cooldownTime: 130
 predictTarget: true
-recoil: 0.5
+recoil: 0.25
 
 shootWarmupSpeed: 0.1
 minWarmup: 0.94
-warmupMaintainTime: 120
+warmupMaintainTime: 130
 
 
 consumesPower: true
@@ -32,7 +30,7 @@ consumes: {
 }
 
 shootSound: "explosionDull"
-shootSoundVolume: 0.5
+shootSoundVolume: 0.4
 shootEffect: "lightningShoot"
 heatColor: "66CCFF40"
 
@@ -59,7 +57,7 @@ shootEffect: {
      line: true
      particles: 15
      cone: 360
-     lifetime: 25
+     lifetime: 20
      baseLength: 0
      length: 40
      strokeFrom: 0.7
@@ -73,11 +71,11 @@ smokeEffect: "none"
 
 shootType: {
     type: "BasicBulletType"
-    damage: 60
-    shieldDamageMultiplier: 3.25
+    damage: 70
+    shieldDamageMultiplier: 5.25
     splashDamageRadius: 64
     splashDamagePierce: true
-    splashDamage: 40
+    splashDamage: 50
     knockback: 2.5
     impact: true
     status: electrified
@@ -106,7 +104,7 @@ shootType: {
         lifetime: 20
         cone: 360
     }
-    trailChance: 1
+    trailChance: 0.5
 
 }
 

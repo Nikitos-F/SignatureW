@@ -1,6 +1,4 @@
 type: "signatureW.blocks.environment.AttributeOre"
-name: "Ephyrite vein"
-description: "Some of the crystals come out from of deep caverns"
 
 oreDefault: true
 oreScale: 40
@@ -11,5 +9,5 @@ mapColor: "64DBDB"
 variants: 4
 
 emitLight: true
-lightRadius: 12
+lightRadius: 14
 lightColor: "64DBDB40"
