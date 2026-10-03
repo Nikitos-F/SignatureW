@@ -1,4 +1,4 @@
-type: "signatureW.blocks.environment.AttributeOre"
+type: "OreBlock"
 
 
 itemDrop: ephyrite-0
