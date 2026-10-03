@@ -1,0 +1,8 @@
+flammability:  0.2
+explosiveness: 0.8
+radioactivity: 0.0
+charge:        0.0
+
+hardness: 4
+cost: 1.5
+color: "DB6464"

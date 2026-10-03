@@ -1,0 +1,14 @@
+type: "OreBlock"
+
+
+itemDrop: korium-0
+oreDefault: true
+oreScale: 40
+oreThreshold: 0.8
+
+mapColor: "DB6464"
+variants: 3
+
+emitLight: true
+lightRadius: 4
+lightColor: "DB646440"
