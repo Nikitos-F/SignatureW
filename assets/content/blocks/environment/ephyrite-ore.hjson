@@ -6,7 +6,6 @@ oreDefault: true
 oreScale: 40
 oreThreshold: 0.93
 
-mapColor: "64DBDB"
 variants: 4
 
 emitLight: true
