@@ -1,0 +1,12 @@
+type: Liquid
+
+
+lightColor: "F47FACA0"
+color: "F47FAC30"
+
+viscosity: 0.0
+temperature: 0.05
+flammability: 0.0
+heatCapacity: 3.5
+
+coolant: true

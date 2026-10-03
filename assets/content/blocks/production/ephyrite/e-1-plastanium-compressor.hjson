@@ -83,4 +83,4 @@ updateEffect: {
 }
 
 ambientSound: "beamLustre"
-ambientSoundVolume: 0.3
+ambientSoundVolume: 0.1
