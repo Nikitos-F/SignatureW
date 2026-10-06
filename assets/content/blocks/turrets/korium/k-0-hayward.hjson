@@ -1,0 +1,172 @@
+type: "ItemTurret"
+
+
+absorbLasers: true
+underBullets: false
+armor: 8
+
+health: 1480
+size: 2
+
+
+category: "turret"
+requirements: [
+    "korium-0/80"
+    "titanium/120"
+    "graphite/120"
+]
+
+
+targetGround: true
+targetAir: false
+
+rotateSpeed: 9
+range: 136
+
+reload: 35
+
+inaccuracy: 2.5
+shoot: {
+    type: "ShootSpread"
+    shots: 15
+    spread: 1.4
+}
+
+ammoTypes: {
+    graphite: {
+        type: "BasicBulletType"
+
+        speed: 9
+        lifetime: 20
+
+        ammoMultiplier: 2
+        damage: 40
+
+        knockback: 0.5
+
+        width: 9
+        height: 16
+
+        backColor: "6e7080"
+        hitColor: "6e7080"
+        trailColor: "6e7080"
+        frontColor: "b2c6d2"
+
+        hitEffect: hitBulletColor
+        despawnEffect: hitBulletColor
+        shootEffect: shootBig
+        smokeEffect: shootSmallSmoke
+
+        trailLength: 5.5
+        trailWidth: 2
+        trailColor: "b2c6d2"
+    }
+    pyratite: {
+        type: "BasicBulletType"
+
+        speed: 9
+        lifetime: 20
+
+        ammoMultiplier: 2
+        damage: 30
+
+        status: burning
+
+        makeFire: true
+
+        armorMultiplier: 1.5
+
+        width: 8
+        height: 16
+
+
+
+        backColor: "F68021"
+        hitColor: "F68021"
+        trailColor: "F68021"
+        frontColor: "F68021"
+
+        hitEffect: fireHit
+        despawnEffect: fireHit
+        trailEffect: fireHit
+        trailChance: 0.35
+        trailSpread: 2
+
+        shootEffect: shootSmallFlame
+        smokeEffect: shootSmallSmoke
+    }
+    korium-0: {
+       type: "BasicBulletType"
+
+       speed: 9
+       lifetime: 20
+
+       ammoMultiplier: 1
+       damage: 30
+
+       status: melting
+
+       makeFire: true
+
+       armorMultiplier: 1.5
+
+       width: 10
+       height: 20
+
+       splashDamageRadius: 12
+       splashDamage: 15
+
+       backColor: "DB6464"
+       hitColor: "DB6464"
+       trailColor: "DB6464"
+       frontColor: "DB6464"
+
+       hitEffect: shootSmallFlame
+       despawnEffect: fireHit
+       trailEffect: fireHit
+       trailChance: 0.8
+       trailSpread: 8
+
+       shootEffect: shootPyraFlame
+       smokeEffect: shootSmallSmoke
+   }
+}
+
+shake: 2
+
+recoil: 0.5
+recoilTime: 60
+
+
+drawer: {
+    type: "drawTurret"
+    parts: [
+        {
+            type: "RegionPart"
+            suffix: "-barrel"
+
+            progress: "recoil"
+            moveY: -2
+
+            heatProgress: "recoil"
+        }
+        {
+            type: "RegionPart"
+            suffix: "-wing"
+            mirror: true
+            progress: "recoil"
+            moveY: -2
+            moveX: 1.75
+            moveRot: 25
+        }
+        {
+            type: "RegionPart"
+            suffix: "-main"
+        }
+    ]
+}
+
+ammoUseEffect: casing2
+
+shootSound: shootSalvo
+shootSoundVolume: 1.5

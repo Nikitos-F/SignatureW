@@ -34,15 +34,16 @@ predictTarget: true
 
 shootType: {
     type: "LaserBulletType"
-    damage: 70
+    damage: 90
     impact: true
     armorMultiplier: 0.9
-    hitSize: 3
+    hitSize: 4
     lifetime: 10
     length: 260
     hitEffect: "none"
     despawnEffect: "none"
     collidesAir: false
+    pierceCap: 3
 }
 
 recoil: 1

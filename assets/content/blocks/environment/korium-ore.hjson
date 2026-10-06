@@ -3,7 +3,7 @@ type: "OreBlock"
 
 itemDrop: korium-0
 oreDefault: true
-oreScale: 70
-oreThreshold: 0.91
+oreScale: 53
+oreThreshold: 0.92
 
 variants: 3

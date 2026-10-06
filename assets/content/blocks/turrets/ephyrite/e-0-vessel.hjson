@@ -23,7 +23,7 @@ consumes: {
 targetGround: true
 targetAir: true
 
-rotateSpeed: 5
+rotateSpeed: 7
 range: 200
 reload: 84
 cooldownTime: 84

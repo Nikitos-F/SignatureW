@@ -1,0 +1,167 @@
+type: "ItemTurret"
+
+
+absorbLasers: true
+underBullets: false
+armor: 8
+
+health: 1320
+size: 2
+
+
+category: "turret"
+requirements: [
+    "korium-0/60"
+    "copper/160"
+    "graphite/80"
+]
+
+
+targetGround: true
+targetAir: true
+
+rotateSpeed: 8
+range: 200
+
+reload: 12
+inaccuracy: 4
+
+ammoTypes: {
+    graphite: {
+        type: "BasicBulletType"
+
+        speed: 6
+        lifetime: 40
+
+        ammoMultiplier: 2
+        damage: 50
+
+        knockback: 0.3
+
+        width: 9
+        height: 12
+
+        backColor: "6e7080"
+        hitColor: "6e7080"
+        trailColor: "6e7080"
+        frontColor: "b2c6d2"
+
+        shootEffect: shootSmall
+        smokeEffect: shootSmallSmoke
+    }
+    metaglass: {
+        type: "FlakBulletType"
+
+        speed: 6
+        lifetime: 40
+
+        ammoMultiplier: 4
+        damage: 20
+
+        reloadMultiplier: 1.2
+
+        splashDamageRadius: 12
+        splashDamage: 15
+
+        fragBullets: 3
+        fragSpread: 180
+        fragRandomSpread: 180
+        fragBullet: {
+            type: "BasicBulletType"
+            damage: 10
+
+            lifetime: 20
+
+            width: 4
+            height: 6
+
+            backColor: "b9c9df"
+            frontColor: "b9c9df"
+        }
+
+        collidesGround: true
+        explodeRange: 8
+
+        width: 8
+        height: 10
+
+        hitEffect: flakExplosion
+
+        backColor: "b9c9df"
+        hitColor: "b9c9df"
+        trailColor: "b9c9df"
+        frontColor: "b9c9df"
+
+        shootEffect: shootSmall
+        smokeEffect: shootSmallSmoke
+    }
+    thorium: {
+        type: "BasicBulletType"
+
+        speed: 7
+        lifetime: 35
+
+        ammoMultiplier: 2
+        damage: 35
+
+        pierceCap: 2
+        armorMultiplier: 0.9
+
+        width: 8
+        height: 12
+
+        backColor: "F595BE"
+        hitColor: "F595BE"
+        trailColor: "F595BE"
+        frontColor: "F595BE"
+
+        shootEffect: shootSmall
+        smokeEffect: shootSmallSmoke
+    }
+}
+
+shake: 1
+
+recoil: 0.3
+recoilTime: 40
+recoils: 2
+
+shoot: {
+    type: "ShootBarrel"
+    barrels: [
+        -3, -2, 0,
+         3, -2, 0,
+    ]
+}
+
+drawer: {
+    type: "DrawTurret"
+    parts: [
+        {
+            type: "RegionPart"
+            suffix: "-barrel-1"
+            progress: "recoil"
+            recoilIndex: 0
+            moveY: -1.5
+
+            heatProgress: "recoil"
+        }
+        {
+            type: "RegionPart"
+            suffix: "-barrel-2"
+            progress: "recoil"
+            recoilIndex: 1
+            moveY: -1.5
+
+            heatProgress: "recoil"
+        }
+        {
+            type: "RegionPart"
+            suffix: "-main"
+        }
+    ]
+}
+
+ammoUseEffect: casing2
+
+shootSound: shootSalvo

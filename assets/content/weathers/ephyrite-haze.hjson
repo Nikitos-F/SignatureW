@@ -10,6 +10,9 @@ yspeed: 0.25
 minAlpha: 0.2
 force: 0
 
+attrs: {
+    light: 3.4
+}
 
 drawNoise: true
 noiseColor: "4A8ACA"
@@ -22,3 +25,4 @@ soundVol: 0.25
 sound: "loopGlow"
 
 status: "ephyrite-exhaustion"
+
