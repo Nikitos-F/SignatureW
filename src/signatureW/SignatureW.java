@@ -1,10 +1,7 @@
 package signatureW;
 
-import arc.*;
 import arc.util.*;
-import mindustry.game.EventType.*;
 import mindustry.mod.*;
-import mindustry.ui.dialogs.*;
 
 public class SignatureW extends Mod{
 
@@ -20,5 +17,5 @@ public class SignatureW extends Mod{
     @Override
     public void loadContent() {
         Log.info("[SignatureW] Загрузка контента...");
-
-}}
+    }
+}
