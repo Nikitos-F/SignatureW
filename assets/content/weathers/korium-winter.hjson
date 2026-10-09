@@ -1,0 +1,27 @@
+type: "ParticleWeather"
+
+
+color: "DB646401"
+particleRegion: "particle"
+density: 8000
+sizeMax: 0
+sizeMin: 0
+yspeed: 0.25
+minAlpha: 0.2
+force: 0
+
+attrs: {
+    light: -0.95
+}
+
+drawNoise: true
+noiseColor: "2F1616"
+useWindVector: false
+noiseLayers: 3
+noiseLayerSpeedM: 0.05
+opacityMultiplier: 1.0
+
+soundVol: 0.25
+sound: "loopGlow"
+
+

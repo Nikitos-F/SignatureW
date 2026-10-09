@@ -1,0 +1,15 @@
+type: Liquid
+
+
+lightColor: "39323200"
+color: "393232"
+
+viscosity: 0.8
+temperature: 0.5
+explosiveness: 1.9
+flammability: 2.4
+heatCapacity: 0.5
+
+effect: tarred
+
+coolant: false

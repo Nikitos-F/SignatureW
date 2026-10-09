@@ -23,7 +23,7 @@ targetAir: false
 rotateSpeed: 9
 range: 136
 
-reload: 35
+reload: 45
 
 inaccuracy: 2.5
 shoot: {
@@ -40,7 +40,7 @@ ammoTypes: {
         lifetime: 20
 
         ammoMultiplier: 2
-        damage: 40
+        damage: 25
 
         knockback: 0.5
 
@@ -54,8 +54,8 @@ ammoTypes: {
 
         hitEffect: hitBulletColor
         despawnEffect: hitBulletColor
-        shootEffect: shootBig
-        smokeEffect: shootSmallSmoke
+        shootEffect: shootBigColor
+        smokeEffect: shootSmokeSquareSparse
 
         trailLength: 5.5
         trailWidth: 2
@@ -67,14 +67,15 @@ ammoTypes: {
         speed: 9
         lifetime: 20
 
-        ammoMultiplier: 2
-        damage: 30
+        ammoMultiplier: 3
+        damage: 18
 
         status: burning
+        statusDuration: 960
 
         makeFire: true
 
-        armorMultiplier: 1.5
+        armorMultiplier: 1.7
 
         width: 8
         height: 16
@@ -93,7 +94,7 @@ ammoTypes: {
         trailSpread: 2
 
         shootEffect: shootSmallFlame
-        smokeEffect: shootSmallSmoke
+        smokeEffect: shootSmokeSquareSparse
     }
     korium-0: {
        type: "BasicBulletType"
@@ -102,7 +103,7 @@ ammoTypes: {
        lifetime: 20
 
        ammoMultiplier: 1
-       damage: 30
+       damage: 20
 
        status: melting
 
@@ -128,7 +129,7 @@ ammoTypes: {
        trailSpread: 8
 
        shootEffect: shootPyraFlame
-       smokeEffect: shootSmallSmoke
+       smokeEffect: shootSmokeSquareSparse
    }
 }
 
@@ -152,6 +153,10 @@ drawer: {
         }
         {
             type: "RegionPart"
+            suffix: "-main"
+        }
+        {
+            type: "RegionPart"
             suffix: "-wing"
             mirror: true
             progress: "recoil"
@@ -159,14 +164,11 @@ drawer: {
             moveX: 1.75
             moveRot: 25
         }
-        {
-            type: "RegionPart"
-            suffix: "-main"
-        }
+
     ]
 }
 
 ammoUseEffect: casing2
 
-shootSound: shootSalvo
+shootSound: shootDiffuse
 shootSoundVolume: 1.5

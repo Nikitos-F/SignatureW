@@ -1,0 +1,47 @@
+type: ConsumeGenerator
+
+
+absorbLasers: true
+underBullets: false
+
+health: 820
+size: 2
+
+category: "power"
+
+requirements: [
+    "lead/80"
+    "graphite/65"
+    "korium-0/35"
+]
+
+consumes: {
+    itemFlammable: {}
+}
+
+powerProduction: 4
+generateEffect: "generatespark"
+
+explosionShake: 2
+explosionScorchSize: 5
+explosionFireballs: 3
+
+ambientSound: loopSmelter
+ambientSoundVolume: 0.1
+effectChance: 0.003
+baseLightRadius: 40
+
+flammabilityScale: 0
+
+drawer: {
+    type: "DrawMulti"
+    drawers: [
+        {
+            type: "DrawDefault"
+        }
+        {
+            type: "DrawWarmupRegion"
+            color: "DB6464FF"
+        }
+    ]
+}
