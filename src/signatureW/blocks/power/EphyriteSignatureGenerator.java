@@ -33,10 +33,8 @@ public class EphyriteSignatureGenerator extends NuclearReactor {
                         entry.cooldown = duration + Mathf.random(entry.minFrequency, entry.maxFrequency);
                         Tmp.v1.setToRandomDirection();
                         Call.createWeather(entry.weather, entry.intensity, duration, Tmp.v1.x, Tmp.v1.y);
-
                     }
                 }
-
             }
         }
     }

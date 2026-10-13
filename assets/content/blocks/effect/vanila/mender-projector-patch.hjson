@@ -1,0 +1,27 @@
+type: signatureW.blocks.defense.MendPoint
+
+name: mender
+description: pass
+
+healPercent: 11
+heal: 360
+
+size: 2
+
+
+requirements: [
+    "lead/100"
+    "titanium/25"
+    "silicon/45"
+    "copper/50"
+]
+
+reload: 250
+range: 85
+phaseBoost: 15
+scaledHealth: 80
+
+consumes: {
+    power: 1.5
+}
+category: effect

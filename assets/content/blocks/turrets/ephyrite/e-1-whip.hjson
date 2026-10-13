@@ -51,7 +51,6 @@ shootType: {
     hitColor: "48bbf5"
     color: "48bbf5"
     beamEffect: [
-        "colorTrail"
         {
             type: "ParticleEffect"
             particles: 6
@@ -99,6 +98,7 @@ drawer: {
         }
     ]
 }
+
 
 shootY: 16
 shootSound: "none"

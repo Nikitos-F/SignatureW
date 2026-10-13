@@ -1,0 +1,81 @@
+type: signatureW.blocks.production.OptionalHeatCrafter
+
+
+absorbLasers: true
+underBullets: false
+flammabilityScale: 0.01
+
+health: 1820
+size: 3
+
+category: "crafting"
+requirements: [
+    "graphite/180"
+    "silicon/160"
+    "surge-alloy/60"
+    "korium-0/120"
+]
+
+
+itemCapacity: 10
+liquidCapacity: 60
+heatRequirement: 10
+maxEfficiency: 1.5
+
+craftTime: 120
+consumes: {
+    items: {
+       items: [ "korium-0/2" ]
+   }
+    power: 1.5
+}
+outputItem: korium-1/1
+outputLiquid: {
+    liquid: korium-liquid-1
+    amount: 0.3
+}
+
+drawer: {
+    type: "DrawMulti"
+    drawers: [
+        {
+            type: DrawDefault
+        }
+        {
+            type: DrawHeatInput
+        }
+        {
+            type: DrawHeatRegion
+            color: "DB6464"
+        }
+    ]
+}
+
+updateEffect: {
+    type: ParticleEffect
+    lifetime: 25
+    particles: 6
+    baseLength: 2
+    length: 12
+    sizeFrom: 1
+    sizeTo: 0.5
+    colorFrom: "DB6464FF"
+    colorTo: "FFFFFF00"
+}
+updateEffectChance: 0.04
+
+craftEffect: {
+     type: ParticleEffect
+     lifetime: 25
+     particles: 18
+     baseLength: 2
+     length: 18
+     sizeFrom: 1.5
+     sizeTo: 0.5
+     colorFrom: "DB6464FF"
+     colorTo: "FFFFFF00"
+ }
+
+
+ambientSound: loopSmelter
+ambientSoundVolume: 0.9

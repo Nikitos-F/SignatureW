@@ -1,0 +1,113 @@
+type: ConsumeGenerator
+
+
+absorbLasers: true
+underBullets: false
+
+health: 620
+size: 2
+
+category: "power"
+
+requirements: [
+    "copper/40"
+    "graphite/20"
+    "korium-0/15"
+]
+
+consumes: {
+    liquids: [
+        "korium-liquid-1/0.2"
+    ]
+}
+
+liquidCapacity: 60
+
+powerProduction: 0.5
+generateEffect: "generatespark"
+
+explosionShake: 2
+explosionScorchSize: 5
+explosionFireballs: 3
+
+ambientSound: loopSmelter
+ambientSoundVolume: 0.8
+
+effectChance: 0.003
+baseLightRadius: 20
+
+flammabilityScale: 0
+
+drawer: {
+    type: "DrawMulti"
+    drawers: [
+        {
+            type: "DrawRegion"
+            suffix: "-bottom"
+        }
+        {
+            type: DrawLiquidTile
+            drawLiquid: "korium-liquid-1"
+        }
+        {
+            type: "DrawDefault"
+        }
+        {
+            type: "DrawWarmupRegion"
+            color: "DB6464FF"
+        }
+    ]
+}
+
+generateEffect: [
+{
+    type: ParticleEffect
+    lifetime: 2400
+    particles: 2
+    baseLength: 2
+    length: 240
+    sizeFrom: 8
+    sizeTo: 24
+    colorFrom: "2F1616FF"
+    colorTo: "2F161600"
+    cone: 360
+}
+{
+    type: ParticleEffect
+    lifetime: 2200
+    particles: 5
+    baseLength: 2
+    length: 200
+    sizeFrom: 4
+    sizeTo: 16
+    colorFrom: "2F1616FF"
+    colorTo: "2F161600"
+    cone: 360
+}
+{
+    type: ParticleEffect
+    lifetime: 2000
+    particles: 8
+    baseLength: 2
+    length: 180
+    sizeFrom: 4
+    sizeTo: 16
+    colorFrom: "2F161622"
+    colorTo: "2F161600"
+    cone: 360
+}
+{
+    type: ParticleEffect
+    particles: 3
+    length: 90
+    lifetime: 420
+    sizeFrom: 1
+    sizeTo: 5
+    cone: 4
+    baseRotation: 73
+    useRotation:false
+    colorFrom: 121212FF
+    colorTo: 32323200
+    layer:100.3
+}
+]

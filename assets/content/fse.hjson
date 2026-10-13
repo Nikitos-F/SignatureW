@@ -2,7 +2,6 @@ type: "HeatConductor"
 name: "Small Heat Redirector"
 description: "Redirects heat flows."
 size: 2
-group: "heat"
 
 requirements: [
     "surge-alloy/8"

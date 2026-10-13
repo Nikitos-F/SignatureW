@@ -1,0 +1,36 @@
+type: HeatProducer
+
+
+absorbLasers: true
+underBullets: false
+flammabilityScale: 0.01
+
+health: 790
+size: 2
+
+category: "crafting"
+requirements: [
+    "graphite/30"
+    "silicon/30"
+]
+
+
+heatOutput: 3
+warmupRate: 0.15
+
+craftTime: 180
+consumes: {
+    items: {
+        items: [ "korium-0/1" ]
+    }
+}
+
+
+
+drawer: {
+    type: "DrawMulti"
+    drawers: [
+        { type: "DrawDefault" }
+        { type: "DrawHeatOutput" }
+    ]
+}

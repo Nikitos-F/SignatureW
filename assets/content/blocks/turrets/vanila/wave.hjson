@@ -1,0 +1,63 @@
+ammoTypes: {
+water: {
+    type: LiquidBulletType
+    liquid: water
+    drag: 0.01
+    knockback: 0.7
+
+    status: wet
+    statusDuration: 120
+
+    layer: 98
+}
+slag: {
+    type: LiquidBulletType
+    liquid: slag
+    drag: 0.01
+    knockback: 0.55
+    damage: 4
+
+    status: melting
+    statusDuration: 120
+
+    layer: 98
+}
+
+cryofluid: {
+    type: LiquidBulletType
+    liquid: cryofluid
+    drag: 0.01
+    knockback: 0.55
+
+    status: freezing
+    statusDuration: 120
+
+    layer: 98
+}
+
+oil: {
+    type: LiquidBulletType
+    liquid: oil
+    drag: 0.01
+
+    knockback: 0.55
+
+    status: tarred
+    statusDuration: 120
+
+    layer: 98
+}
+
+korium-liquid-1: {
+    type: LiquidBulletType
+    liquid: korium-liquid-1
+    drag: 0.01
+
+    knockback: 0.8
+
+    status: tarred
+    statusDuration: 240
+
+    layer: 98
+}
+    }

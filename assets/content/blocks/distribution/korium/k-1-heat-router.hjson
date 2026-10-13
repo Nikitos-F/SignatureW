@@ -1,0 +1,43 @@
+type: signatureW.blocks.distribution.HeatConductorLimited
+
+
+absorbLasers: true
+underBullets: false
+flammabilityScale: 0.01
+
+health: 600
+size: 1
+
+category: distribution
+requirements: [
+    "surge-alloy/8"
+    "korium-1/10"
+]
+
+splitHeat: true
+
+drawer: {
+    type: "DrawMulti"
+    drawers: [
+        {
+            type: "DrawDefault"
+        }
+        {
+            type: "DrawHeatOutput"
+        }
+        {
+            type: "DrawHeatInput"
+            suffix: "-heat"
+        }
+        {
+            type: "DrawHeatInput"
+            suffix: "-heat"
+            rotOffset: -1
+        }
+        {
+            type: "DrawHeatInput"
+            suffix: "-heat"
+            rotOffset: 1
+        }
+    ]
+}
