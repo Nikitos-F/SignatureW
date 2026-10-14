@@ -3,6 +3,7 @@ type: "ItemTurret"
 
 absorbLasers: true
 underBullets: false
+flammabilityScale: 0.01
 armor: 8
 
 health: 1480
@@ -115,7 +116,7 @@ ammoTypes: {
        height: 20
 
        splashDamageRadius: 12
-       splashDamage: 15
+       splashDamage: 10
 
        backColor: "DB6464"
        hitColor: "DB6464"

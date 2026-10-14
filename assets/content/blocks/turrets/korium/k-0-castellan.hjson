@@ -3,6 +3,7 @@ type: "ItemTurret"
 
 absorbLasers: true
 underBullets: false
+flammabilityScale: 0.01
 armor: 8
 
 health: 1320

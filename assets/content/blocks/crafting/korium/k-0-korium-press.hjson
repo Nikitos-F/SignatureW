@@ -1,4 +1,4 @@
-type: signatureW.blocks.production.OptionalHeatCrafter
+type: signatureW.blocks.crafting.OptionalHeatCrafter
 
 
 absorbLasers: true

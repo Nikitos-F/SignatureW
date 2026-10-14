@@ -1,0 +1,30 @@
+type: signatureW.blocks.production.HeatDrill
+
+
+absorbLasers: true
+underBullets: false
+flammabilityScale: 0.01
+
+health: 3800
+size: 4
+
+category: "production"
+requirements: [
+    "graphite/70"
+]
+
+blockedItem: ephyrite-0
+
+drillMultipliers: {
+    korium-0: 1.25
+}
+
+tier: 6
+drillTime: 180
+itemCapacity: 60
+hasLiquids: false
+
+consumes: {
+    power: 3
+}
+

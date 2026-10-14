@@ -1,4 +1,4 @@
-package signatureW.blocks.production;
+package signatureW.blocks.crafting;
 
 import arc.*;
 import arc.math.*;
@@ -20,13 +20,10 @@ public class OptionalHeatCrafter extends HeatCrafter {
     public class OptionalHeatCrafterBuild extends HeatCrafterBuild {
 
         @Override
-        public BlockStatus status(){
-            if (this.heat == 0) {
-                this.heat = 2f;
-            }
-
-            if(heatRequirement > 0 && (heat+1f) <= 0f && enabled) return BlockStatus.noInput;
-            return super.status();
+        public float efficiencyScale(){
+            float over = Math.max(heat - heatRequirement, 0f);
+            return Math.min(Mathf.clamp((heat+heatRequirement*0.1f) / heatRequirement) + over / heatRequirement * overheatScale, maxEfficiency);
         }
+
     }
 }

@@ -15,6 +15,7 @@ requirements: [
 ]
 
 splitHeat: true
+visualMaxHeat: 500
 
 drawer: {
     type: DrawMulti
