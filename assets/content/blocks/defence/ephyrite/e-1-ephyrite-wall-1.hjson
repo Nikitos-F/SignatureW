@@ -13,10 +13,6 @@ requirements: [
     "plastanium/8"
 ]
 
-consumes: {
-    power: 1
-}
-
 armor: 16
 shieldHealth: 1020
 radius: 12
@@ -25,3 +21,8 @@ sides: 24
 conductivePower: true
 cooldownNormal: 0.6
 cooldownBrokenBase: 1
+
+consumes: {
+    power: 1
+}
+

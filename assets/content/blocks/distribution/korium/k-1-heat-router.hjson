@@ -5,7 +5,7 @@ absorbLasers: true
 underBullets: false
 flammabilityScale: 0.01
 
-health: 600
+health: 1020
 size: 1
 
 category: distribution
@@ -17,27 +17,12 @@ requirements: [
 splitHeat: true
 
 drawer: {
-    type: "DrawMulti"
+    type: DrawMulti
     drawers: [
-        {
-            type: "DrawDefault"
-        }
-        {
-            type: "DrawHeatOutput"
-        }
-        {
-            type: "DrawHeatInput"
-            suffix: "-heat"
-        }
-        {
-            type: "DrawHeatInput"
-            suffix: "-heat"
-            rotOffset: -1
-        }
-        {
-            type: "DrawHeatInput"
-            suffix: "-heat"
-            rotOffset: 1
-        }
+        { type: DrawDefault }
+        { type: DrawHeatOutput, rotOffset: -1, drawGlow: false }
+        { type: DrawHeatOutput }
+        { type: DrawHeatOutput, rotOffset: 1, drawGlow: false }
+        { type: DrawHeatInput, suffix: "-heat" }
     ]
 }

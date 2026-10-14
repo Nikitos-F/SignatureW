@@ -1,0 +1,19 @@
+type: Wall
+
+
+absorbLasers: true
+underBullets: false
+flammabilityScale: 0.01
+
+size: 2
+health: 7640
+category: "defense"
+
+requirements: [
+    "korium-1/16"
+    "surge-alloy/32"
+]
+
+armor: 18
+
+

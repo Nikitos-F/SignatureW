@@ -15,10 +15,10 @@ requirements: [
 ]
 
 
-heatOutput: 3
+heatOutput: 5
 warmupRate: 0.15
 
-craftTime: 180
+craftTime: 210
 consumes: {
     items: {
         items: [ "korium-0/1" ]
@@ -31,6 +31,6 @@ drawer: {
     type: "DrawMulti"
     drawers: [
         { type: "DrawDefault" }
-        { type: "DrawHeatOutput" }
+        { type: "DrawHeatOutput"}
     ]
 }
