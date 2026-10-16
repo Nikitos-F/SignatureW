@@ -37,7 +37,7 @@ public class HeatDrill extends BurstDrill {
                 new Bar(() ->
                         Core.bundle.format("bar.heatpercent", (int)(entity.heat + 0.01f), (int)(entity.efficiencyScale() * 100 + 0.01f)),
                         () -> Pal.lightOrange,
-                        () -> entity.heat / heatRequirement / maxEfficiency));
+                        () -> entity.heat / heatRequirement));
     }
 
     @Override
