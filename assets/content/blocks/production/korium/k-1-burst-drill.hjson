@@ -20,11 +20,11 @@ drillMultipliers: {
 }
 
 tier: 6
-drillTime: 180
+drillTime: 200
 itemCapacity: 60
 hasLiquids: false
 
 consumes: {
-    power: 3
+    power: 5
 }
 

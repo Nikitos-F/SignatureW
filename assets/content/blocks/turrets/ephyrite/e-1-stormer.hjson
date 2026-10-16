@@ -19,7 +19,6 @@ consumes: {
     power: 12
     coolant: { amount: 0.5 }
 }
-coolantMultiplier: 1.35
 
 
 targetGround: true

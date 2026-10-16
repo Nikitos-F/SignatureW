@@ -18,15 +18,7 @@ requirements: [
 
 consumes: {
     power: 22
-    liquids: {
-         liquids: [
-             {
-                 liquid: "cryofluid"
-                 amount: 0.3
-                 optional: false
-             }
-         ]
-     }
+    coolant: { amount: 0.35 }
 }
 
 

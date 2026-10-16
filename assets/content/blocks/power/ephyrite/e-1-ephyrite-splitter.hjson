@@ -38,7 +38,16 @@ flashThreshold: 0.74
 explodeSound: explosionReactorNeoplasm
 explosionShake: 10
 explosionRadius: 25
-explosionDamage: 7500
+explosionDamage: 5500
+
+drawer: {
+    type: "DrawMulti"
+    drawers: [
+        { type: DrawRegion, suffix: "-bottom" }
+        { type: DrawLiquidTile, drawLiquid: "cryofluid" }
+        { type: DrawDefault }
+    ]
+}
 
 explodeEffect: {
    "type": "multiEffect",
