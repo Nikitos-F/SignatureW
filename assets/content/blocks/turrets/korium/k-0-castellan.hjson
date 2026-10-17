@@ -39,16 +39,22 @@ ammoTypes: {
 
         knockback: 0.3
 
-        width: 9
-        height: 12
+        width: 6
+        height: 8
 
         backColor: "6e7080"
         hitColor: "6e7080"
         trailColor: "6e7080"
         frontColor: "b2c6d2"
 
+        hitEffect: hitBulletColor
+        despawnEffect: hitBulletColor
         shootEffect: shootSmall
         smokeEffect: shootSmallSmoke
+
+        trailLength: 2.5
+        trailWidth: 2
+        trailColor: "b2c6d2"
     }
     metaglass: {
         type: "FlakBulletType"
@@ -60,6 +66,7 @@ ammoTypes: {
         damage: 20
 
         reloadMultiplier: 1.2
+        ammoMultiplier: 1.2
 
         splashDamageRadius: 12
         splashDamage: 15
@@ -70,6 +77,7 @@ ammoTypes: {
         fragBullet: {
             type: "BasicBulletType"
             damage: 10
+            ammoMultiplier: 1.2
 
             lifetime: 20
 
@@ -78,13 +86,16 @@ ammoTypes: {
 
             backColor: "b9c9df"
             frontColor: "b9c9df"
+
+            hitEffect: hitBulletColor
+            despawnEffect: hitBulletColor
         }
 
         collidesGround: true
         explodeRange: 8
 
-        width: 8
-        height: 10
+        width: 6
+        height: 8
 
         hitEffect: flakExplosion
 
@@ -93,8 +104,14 @@ ammoTypes: {
         trailColor: "b9c9df"
         frontColor: "b9c9df"
 
+        hitEffect: hitBulletColor
+        despawnEffect: hitBulletColor
         shootEffect: shootSmall
         smokeEffect: shootSmallSmoke
+
+        trailLength: 2.5
+        trailWidth: 2
+        trailColor: "b9c9df"
     }
     thorium: {
         type: "BasicBulletType"
@@ -109,17 +126,58 @@ ammoTypes: {
         armorMultiplier: 0.9
         reloadMultiplier: 0.9
 
-        width: 8
-        height: 12
+        width: 6
+        height: 8
 
         backColor: "F595BE"
         hitColor: "F595BE"
         trailColor: "F595BE"
         frontColor: "F595BE"
 
+        hitEffect: hitBulletColor
+        despawnEffect: hitBulletColor
         shootEffect: shootSmall
         smokeEffect: shootSmallSmoke
+
+        trailLength: 2.5
+        trailWidth: 2
+        trailColor: "F595BE"
     }
+    korium-0: {
+           type: "BasicBulletType"
+
+           speed: 9
+           lifetime: 20
+
+           ammoMultiplier: 1
+           damage: 20
+
+           status: melting
+
+           makeFire: true
+
+           armorMultiplier: 1.5
+
+           width: 10
+           height: 20
+
+           splashDamageRadius: 12
+           splashDamage: 10
+
+           backColor: "DB6464"
+           hitColor: "DB6464"
+           trailColor: "DB6464"
+           frontColor: "DB6464"
+
+           hitEffect: shootSmallFlame
+           despawnEffect: fireHit
+           trailEffect: fireHit
+           trailChance: 0.8
+           trailSpread: 8
+
+           shootEffect: shootPyraFlame
+           smokeEffect: shootSmokeSquareSparse
+       }
 }
 
 shake: 1
@@ -147,6 +205,7 @@ drawer: {
             moveY: -1.5
 
             heatProgress: "recoil"
+            heatColor: "DB6464"
         }
         {
             type: "RegionPart"
@@ -156,6 +215,7 @@ drawer: {
             moveY: -1.5
 
             heatProgress: "recoil"
+            heatColor: "DB6464"
         }
         {
             type: "RegionPart"

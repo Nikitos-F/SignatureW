@@ -151,6 +151,7 @@ drawer: {
             moveY: -2
 
             heatProgress: "recoil"
+            heatColor: "DB6464"
         }
         {
             type: "RegionPart"
