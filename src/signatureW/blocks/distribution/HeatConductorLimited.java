@@ -57,8 +57,22 @@ public class HeatConductorLimited extends HeatConductor {
             lastHeatUpdate = Vars.state.updateId;
             heat = enabled ? calculateHeat(sideHeat, cameFrom) : 0f;
 
-//            absHealth = maxHealth;
-//            maxHealth *= (1 - heat/(explodeThreshold*maxHeat));
+        }
+
+        @Override
+        public void drawLight(){
+            super.drawLight(); // Отрисовка стандартного света (если есть)
+
+            if(heat > 0.1f) {
+                float intensity = Mathf.clamp(heat / visualMaxHeat);
+
+                Drawf.light(
+                        x, y,
+                        lightRadius * 8f, // lightRadius в пикселях (тайл = 8 пикселей)
+                        lightColor,
+                        0.5f * intensity // Прозрачность/яркость
+                );
+            }
         }
     }
 }

@@ -1,4 +1,4 @@
-type: ConsumeGenerator
+type: signatureW.blocks.power.ConsumeGeneratorColor
 
 
 absorbLasers: true
@@ -16,7 +16,9 @@ requirements: [
 ]
 
 consumes: {
-    itemFlammable: {}
+    itemFlammable: {
+        minFlammability: 0.5
+    }
 }
 
 powerProduction: 4
@@ -45,3 +47,5 @@ drawer: {
         }
     ]
 }
+
+lightColor: DB6464

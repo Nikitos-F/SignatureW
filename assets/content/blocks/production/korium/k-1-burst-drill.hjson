@@ -34,3 +34,7 @@ consumes: {
     power: 5
 }
 
+emitLight: true
+lightRadius: 5
+lightColor: DB6464
+

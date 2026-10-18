@@ -24,3 +24,7 @@ drawer: {
     ]
 }
 regionRotated1: 1
+
+emitLight: true
+lightRadius: 1
+lightColor: DB6464

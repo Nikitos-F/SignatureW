@@ -1,4 +1,4 @@
-type: "signatureW.blocks.power.ChargeGenerator"
+type: signatureW.blocks.power.ConsumeGeneratorColor
 
 
 absorbLasers: true
@@ -14,6 +14,12 @@ requirements: [
     "ephyrite-1/15"
     "surge-alloy/25"
 ]
+
+consumes: {
+    itemCharged: {
+        minCharge: 0.8
+    }
+}
 
 
 powerProduction: 8.1
@@ -31,6 +37,9 @@ drawer: {
         }
     ]
 }
+
+lightColor: 53B6D7
+lightRadius: 10
 
 explosionRadius: 3
 explosionDamage: 180

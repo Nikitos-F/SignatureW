@@ -1,4 +1,4 @@
-type: ConsumeGenerator
+type: signatureW.blocks.power.ConsumeGeneratorColor
 
 
 absorbLasers: true
@@ -58,6 +58,8 @@ drawer: {
         }
     ]
 }
+
+lightColor: DB6464
 
 generateEffect: [
 {

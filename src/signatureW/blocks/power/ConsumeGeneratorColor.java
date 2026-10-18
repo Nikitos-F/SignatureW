@@ -7,21 +7,21 @@ import arc.math.*;
 import mindustry.graphics.*;
 
 
-public class ChargeGenerator extends ConsumeGenerator {
+public class ConsumeGeneratorColor extends ConsumeGenerator {
 
     public Color lightColor = Color.valueOf("53B6D7");
+    public float lightRadius = 2f;
 
 
-    public ChargeGenerator(String name) {
+    public ConsumeGeneratorColor(String name) {
         super(name);
-        consume(new ConsumeItemCharged());
     }
 
     public class ChargeGeneratorBuild extends ConsumeGeneratorBuild {
         @Override
         public void drawLight(){
             drawer.drawLight(this);
-            Drawf.light(x, y, (60f + Mathf.absin(10f, 5f)) * size, lightColor, 0.5f * warmup);
+            Drawf.light(x, y, lightRadius*8f, lightColor, 0.5f * warmup);
         }
     }
 }

@@ -97,6 +97,22 @@ public class HeatDrill extends BurstDrill {
         public float[] sideHeat(){
             return sideHeat;
         }
+
+        @Override
+        public void drawLight(){
+            super.drawLight(); // Отрисовка стандартного света (если есть)
+
+            if(efficiency > 0.1f) {
+                float intensity = Mathf.clamp(heat / heatRequirement*maxEfficiency);
+
+                Drawf.light(
+                        x, y,
+                        lightRadius * 8f, // lightRadius в пикселях (тайл = 8 пикселей)
+                        lightColor,
+                        0.5f * intensity // Прозрачность/яркость
+                );
+            }
+        }
     }
 
 }

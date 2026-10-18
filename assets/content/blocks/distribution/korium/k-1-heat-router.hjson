@@ -27,3 +27,7 @@ drawer: {
         { type: DrawHeatInput, suffix: "-heat" }
     ]
 }
+
+emitLight: true
+lightRadius: 2
+lightColor: DB6464
