@@ -1,0 +1,53 @@
+{
+	"type": "signatureW.blocks.power.ConsumeGeneratorColor",
+
+
+	"absorbLasers": true,
+	"underBullets": false,
+	"flammabilityScale": 0.01,
+
+	"health": 820,
+	"size": 2,
+
+	"category": "power",
+	"requirements": [
+		"lead/80",
+		"graphite/65",
+		"korium-0/35"
+	],
+
+	"consumes": {
+		"itemFlammable": {
+			"minFlammability": 0.5
+		}
+	},
+
+	"powerProduction": 4,
+	"generateEffect": "generatespark",
+
+	"explosionShake": 2,
+	"explosionScorchSize": 5,
+	"explosionFireballs": 3,
+
+
+	"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			{
+				"type": "DrawDefault"
+			},
+			{
+				"type": "DrawWarmupRegion",
+				"color": "DB6464FF"
+			}
+		]
+	},
+
+	"baseLightRadius": 40,
+	"lightColor": "DB6464",
+
+	"effectChance": 0.003,
+
+	"ambientSound": "loopSmelter",
+	"ambientSoundVolume": 0.4
+}

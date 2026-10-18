@@ -37,8 +37,12 @@ shootType: {
     lightningDamage: 25
     lightningColor: "66CCFF"
 
-    collidesAir: false
+    collidesAir: true
     collidesGround: true
+
+    hittable: false
+    reflectable: false
+    pierceArmor: true
 
     lightning: 2
     lightningCone: 30

@@ -102,7 +102,7 @@ shootEffect: {
      type: "ParticleEffect"
      line: true
      particles: 15
-     cone: 360
+     cone: 30
      lifetime: 20
      baseLength: 0
      length: 40

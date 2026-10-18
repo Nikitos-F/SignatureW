@@ -37,7 +37,7 @@ flashThreshold: 0.74
 
 explodeSound: explosionReactorNeoplasm
 explosionShake: 10
-explosionRadius: 25
+explosionRadius: 21
 explosionDamage: 5500
 
 drawer: {
@@ -53,65 +53,44 @@ explodeEffect: {
    "type": "multiEffect",
    "effects": [
      {
-          type: "ParticleEffect"
-          particles: 6
-          interp: pow5Out
-          cone: 360
-          lifetime: 420
-          length: 140
-          sizeFrom: 90
-          sizeTo: 80
-          colorFrom: "53B6D7A0"
-          colorTo: "48BBF500"
-     },
+         type: ExplosionEffect
+
+         lifetime: 120
+
+         waveColor: 64DBDB
+         waveStroke: 1.25
+         waveRad: 240
+         waveLife: 30
+
+         smokeColor: 64DBDB
+         smokeRad: 120
+         smokeSizeBase: 0.5
+         smokeSize: 48
+         smokes: 10
+
+         sparkColor: 4A8ACA
+         sparkStroke: 2.0
+         sparkRad: 180
+         sparkLen: 12
+         sparks: 18
+         }
      {
-          type: "ParticleEffect"
-          particles: 8
-          interp: pow5Out
-          cone: 360
-          lifetime: 320
-          length: 100
-          sizeFrom: 50
-          sizeTo: 30
-          colorFrom: "53B6D7A0"
-          colorTo: "48BBF500"
-     },
-     {
-       type: "ParticleEffect"
-       particles: 8
-       interp: pow5Out
-       cone: 360
-       lifetime: 240
-       baseLength: 40
-       length: 120
-       sizeFrom: 60
-       sizeTo: 50
-       colorFrom: "53B6D7A0"
-       colorTo: "48BBF500"
-     },
-     {
-        type: "ParticleEffect"
-        particles: 12
-        interp: pow5Out
-        cone: 360
-        lifetime: 320
-        baseLength: 120
-        length: 180
-        sizeFrom: 70
-        sizeTo: 30
-        colorFrom: "53B6D7A0"
-        colorTo: "48BBF500"
-      },
-      {
-        type: "WaveEffect"
-        lifetime: 20
-        strokeFrom: 7
-        strokeTo: 2
-        sizeFrom: 32
-        sizeTo: 200
-        colorFrom: "53B6D7FF"
-        colorTo: "48BBF5A0"
-      },
+          type: ExplosionEffect
+
+          lifetime: 280
+
+          waveColor: 64DBDB
+          waveStroke: 0
+          waveRad: 0
+
+          smokeColor: 4A8ACA70
+          smokeRad: 190
+          smokeSizeBase: 0.5
+          smokeSize: 120
+          smokes: 11
+
+          sparks: 0
+          }
    ]
 }
 

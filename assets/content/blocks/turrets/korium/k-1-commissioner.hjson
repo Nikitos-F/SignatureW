@@ -6,7 +6,7 @@ underBullets: false
 flammabilityScale: 0.01
 armor: 8
 
-health: 4320
+health: 3820
 size: 4
 
 
@@ -64,6 +64,7 @@ ammoTypes: {
         trailLength: 2.5
         trailWidth: 2
         trailColor: "b2c6d2"
+        lightColor: "b2c6d2"
     }
     metaglass: {
         type: "FlakBulletType"
@@ -121,6 +122,7 @@ ammoTypes: {
         trailLength: 2.5
         trailWidth: 2
         trailColor: "b9c9df"
+        lightColor: b9c9df
     }
     thorium: {
         type: "BasicBulletType"
@@ -149,6 +151,7 @@ ammoTypes: {
         trailLength: 2.5
         trailWidth: 2
         trailColor: "F595BE"
+        lightColor: F595BE
     }
     korium-1: {
        type: "BasicBulletType"
@@ -167,7 +170,7 @@ ammoTypes: {
        width: 6
        height: 8
 
-       splashDamageRadius: 16
+       splashDamageRadius: 6
        splashDamage: 25
 
        backColor: "DB6464"
@@ -177,52 +180,45 @@ ammoTypes: {
        trailLength: 2.5
        trailWidth: 2
        trailColor: "DB6464"
+       lightColor: DB6464
 
        hitEffect: {
-         type: multiEffect,
-         effects: [
-         fireHit,
-           {
-                type: "WaveEffect"
-                lifetime: 20
-                strokeFrom: 1.0
-                strokeTo: 0.25
-                sizeFrom: 0
-                sizeTo: 24
-                colorFrom: "AC2C2C"
-                colorTo: "DB646480"
-           },
-         ]
-      }
+
+              type: ExplosionEffect
+
+              lifetime: 16
+
+              waveColor: "AC2C2C"
+              waveStroke: 0.25
+              waveRad: 12
+              waveLife: 3
+
+              smokeRad: 20
+              smokeSizeBase: 0
+              smokeSize: 1
+              smokes: 2
+
+              sparks: 0
+
+          }
        despawnEffect: {
-           type: multiEffect,
-           effects: [
-           fireHit,
-             {
-                  type: "WaveEffect"
-                  lifetime: 15
-                  strokeFrom: 1.5
-                  strokeTo: 0.5
-                  sizeFrom: 0
-                  sizeTo: 16
-                  colorFrom: "AC2C2C"
-                  colorTo: "DB646480"
-             },
-             {
-                 type: ParticleEffect
-                 lifetime: 15
-                 particles: 4
-                 baseLength: 0
-                 length: 15
-                 sizeFrom: 1
-                 sizeTo: 0.5
-                 colorFrom: "AC2C2C"
-                 colorTo: "DB646480"
-             }
-           ]
+
+            type: ExplosionEffect
+
+            lifetime: 24
+
+            waveStroke: 0.5
+            waveRad: 12
+            waveLife: 6
+
+            smokeRad: 32
+            smokeSizeBase: 0.5
+            smokeSize: 2.5
+            smokes: 1
+
+            sparks: 1
+
         }
-
-
 
        shootEffect: shootSmallFlame
        smokeEffect: shootSmokeSquareSparse
