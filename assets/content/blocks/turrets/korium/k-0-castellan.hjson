@@ -49,7 +49,7 @@ ammoTypes: {
 
         hitEffect: hitBulletColor
         despawnEffect: hitBulletColor
-        shootEffect: shootSmall
+        shootEffect: none
         smokeEffect: shootSmallSmoke
 
         trailLength: 2.5

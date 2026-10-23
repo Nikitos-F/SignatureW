@@ -55,7 +55,7 @@ ammoTypes: {
 
         hitEffect: hitBulletColor
         despawnEffect: hitBulletColor
-        shootEffect: shootBigColor
+        shootEffect: none
         smokeEffect: shootSmokeSquareSparse
 
         trailLength: 5.5

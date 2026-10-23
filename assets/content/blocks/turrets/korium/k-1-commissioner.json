@@ -1,0 +1,274 @@
+{
+  "type": "ItemTurret",
+
+
+  "absorbLasers": true,
+  "underBullets": false,
+  "flammabilityScale": 0.01,
+
+  "armor": 8,
+  "health": 3820,
+  "size": 4,
+
+  "category": "turret",
+  "requirements": [
+    "korium-1/360",
+    "graphite/680",
+    "surge-alloy/480",
+    "thorium/520",
+    "silicon/240"
+  ],
+
+  "targetGround": true,
+  "targetAir": true,
+
+  "rotateSpeed": 2,
+  "range": 320,
+
+  "shootWarmupSpeed": 0.01,
+  "minWarmup": 0.01,
+  "warmupMaintainTime": 192,
+
+  "heatRequirement": 25,
+  "maxHeatEfficiency": 2,
+
+  "reload": 25,
+  "inaccuracy": 3,
+
+  "ammoTypes": {
+    "graphite": {
+      "type": "BasicBulletType",
+
+
+      "speed": 10,
+      "lifetime": 34,
+      "ammoMultiplier": 1,
+      "damage": 50,
+      "knockback": 0.5,
+      "width": 6,
+      "height": 8,
+
+      "backColor": "6e7080",
+      "hitColor": "6e7080",
+      "trailColor": "b2c6d2",
+      "frontColor": "b2c6d2",
+
+      "hitEffect": "hitBulletColor",
+      "despawnEffect": "hitBulletColor",
+      "shootEffect": "shootBigColor",
+      "smokeEffect": "shootSmokeSquareSparse",
+
+      "trailLength": 2.5,
+      "trailWidth": 2,
+      "lightColor": "b2c6d2"
+    },
+    "metaglass": {
+      "type": "FlakBulletType",
+
+
+      "speed": 10,
+      "lifetime": 34,
+      "ammoMultiplier": 1.2,
+      "damage": 15,
+      "reloadMultiplier": 1.2,
+      "splashDamageRadius": 12,
+      "splashDamage": 15,
+      "fragBullets": 3,
+      "fragSpread": 180,
+      "fragRandomSpread": 180,
+      "fragBullet": {
+        "type": "BasicBulletType",
+        "damage": 10,
+        "ammoMultiplier": 1.2,
+        "lifetime": 20,
+        "width": 4,
+        "height": 6,
+        "backColor": "b9c9df",
+        "frontColor": "b9c9df",
+        "hitEffect": "hitBulletColor",
+        "despawnEffect": "hitBulletColor"
+      },
+      "collidesGround": true,
+      "explodeRange": 8,
+      "width": 6,
+      "height": 8,
+      "hitEffect": "hitBulletColor",
+      "backColor": "b9c9df",
+      "hitColor": "b9c9df",
+      "trailColor": "b9c9df",
+      "frontColor": "b9c9df",
+      "despawnEffect": "hitBulletColor",
+      "shootEffect": "shootBigColor",
+      "smokeEffect": "shootSmokeSquareSparse",
+      "trailLength": 2.5,
+      "trailWidth": 2,
+      "lightColor": "b9c9df"
+    },
+    "thorium": {
+      "type": "BasicBulletType",
+      "speed": 11,
+      "lifetime": 34,
+      "ammoMultiplier": 1,
+      "damage": 35,
+      "armorMultiplier": 1.1,
+      "width": 7,
+      "height": 9,
+      "backColor": "F595BE",
+      "hitColor": "F595BE",
+      "trailColor": "F595BE",
+      "frontColor": "F595BE",
+      "hitEffect": "hitBulletColor",
+      "despawnEffect": "hitBulletColor",
+      "shootEffect": "none",
+      "smokeEffect": "shootSmokeSquareSparse",
+      "trailLength": 2.5,
+      "trailWidth": 2,
+      "lightColor": "F595BE"
+    },
+    "korium-1": {
+      "type": "BasicBulletType",
+      "speed": 12,
+      "lifetime": 30,
+      "ammoMultiplier": 1,
+      "damage": 40,
+      "status": "melting",
+      "makeFire": true,
+      "armorMultiplier": 1.2,
+      "width": 6,
+      "height": 8,
+      "splashDamageRadius": 6,
+      "splashDamage": 25,
+      "backColor": "DB6464",
+      "hitColor": "DB6464",
+      "frontColor": "DB6464",
+      "trailLength": 2.5,
+      "trailWidth": 2,
+      "trailColor": "DB6464",
+      "lightColor": "DB6464",
+      "hitEffect": {
+        "type": "ExplosionEffect",
+        "lifetime": 16,
+        "waveColor": "AC2C2C",
+        "waveStroke": 0.25,
+        "waveRad": 12,
+        "waveLife": 3,
+        "smokeRad": 20,
+        "smokeSizeBase": 0,
+        "smokeSize": 1,
+        "smokes": 2,
+        "sparks": 0
+      },
+      "despawnEffect": {
+        "type": "ExplosionEffect",
+        "lifetime": 24,
+        "waveStroke": 0.5,
+        "waveRad": 12,
+        "waveLife": 6,
+        "smokeRad": 32,
+        "smokeSizeBase": 0.5,
+        "smokeSize": 2.5,
+        "smokes": 1,
+        "sparks": 1
+      },
+      "shootEffect": "shootSmallFlame",
+      "smokeEffect": "shootSmokeSquareSparse"
+    }
+  },
+  "ammoPerShot": 4,
+  "maxAmmo": 40,
+  "shake": 2,
+  "recoil": 1.25,
+  "recoilTime": 30,
+  "recoils": 4,
+  "shoot": {
+    "type": "ShootBarrel",
+    "barrels": [
+      -12.4, -3.5, 0,
+      12.4, -3.5, 0,
+      -8.1, -3.5, 0,
+      8.1, -3.5, 0
+    ],
+    "shots": 24,
+    "shotDelay": 8
+  },
+
+
+  "drawer": {
+    "type": "DrawTurret",
+    "parts": [
+      {
+        "type": "RegionPart",
+        "suffix": "-barrel-1",
+        "progress": "recoil",
+        "recoilIndex": 0,
+        "moveY": -4.5,
+        "heatProgress": "recoil",
+        "heatColor": "DB6464"
+      },
+      {
+        "type": "RegionPart",
+        "suffix": "-barrel-2",
+        "progress": "recoil",
+        "recoilIndex": 1,
+        "moveY": -4.5,
+        "heatProgress": "recoil",
+        "heatColor": "DB6464"
+      },
+      {
+        "type": "RegionPart",
+        "suffix": "-barrel-3",
+        "progress": "recoil",
+        "recoilIndex": 2,
+        "moveY": -4.5,
+        "heatProgress": "recoil",
+        "heatColor": "DB6464"
+      },
+      {
+        "type": "RegionPart",
+        "suffix": "-barrel-4",
+        "progress": "recoil",
+        "recoilIndex": 3,
+        "moveY": -4.5,
+        "heatProgress": "recoil",
+        "heatColor": "DB6464"
+      },
+      {
+        "type": "RegionPart",
+        "suffix": "-box",
+        "mirror": true,
+        "progress": "warmup",
+        "moveY": -2.2
+      },
+      {
+        "type": "RegionPart",
+        "suffix": "-main",
+        "progress": "warmup",
+        "moveY": 1.75
+      },
+      {
+        "type": "RegionPart",
+        "suffix": "-under-head"
+      },
+      {
+        "type": "RegionPart",
+        "suffix": "-piston-1",
+        "progress": "smoothReload",
+        "moveX": 0.8
+      },
+      {
+        "type": "RegionPart",
+        "suffix": "-piston-2",
+        "progress": "smoothReload",
+        "moveX": -0.8
+      },
+      {
+        "type": "RegionPart",
+        "suffix": "-upper-head"
+      }
+    ]
+  },
+
+  "ammoUseEffect": "none",
+  "shootSound": "shootSalvo",
+  "shootSoundVolume": 2.2
+}

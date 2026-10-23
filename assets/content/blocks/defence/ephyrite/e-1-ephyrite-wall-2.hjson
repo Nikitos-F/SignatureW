@@ -5,7 +5,7 @@ absorbLasers: true
 underBullets: false
 
 size: 2
-health: 2040
+health: 3060
 
 category: "defense"
 requirements: [
@@ -14,7 +14,7 @@ requirements: [
 ]
 
 armor: 16
-shieldHealth: 4080
+shieldHealth: 3060
 radius: 16
 sides: 24
 

@@ -3,6 +3,8 @@ package signatureW.blocks.defense;
 import arc.math.*;
 import mindustry.world.blocks.defense.MendProjector;
 import mindustry.content.*;
+import mindustry.graphics.*;
+import arc.util.*;
 
 import static mindustry.Vars.*;
 
@@ -23,6 +25,7 @@ public class MendPoint extends MendProjector {
         stats.add(mindustry.world.meta.Stat.repairSpeed, heal/reload*60, mindustry.world.meta.StatUnit.perSecond);
     }
 
+
     public class MendPointBuild extends MendBuild {
 
         @Override
@@ -40,7 +43,7 @@ public class MendPoint extends MendProjector {
             }
 
             if(charge >= reload && canHeal){
-                float realRange = range + phaseHeat * phaseRangeBoost;
+                float realRange = range;
                 charge = 0f;
 
                 any = false;
@@ -56,6 +59,13 @@ public class MendPoint extends MendProjector {
                     mendSound.at(this, 1f + Mathf.range(0.1f), mendSoundVolume);
                 }
             }
+        }
+
+        @Override
+        public void drawSelect(){
+            float realRange = range;
+            indexer.eachBlock(this, realRange, other -> true, other -> Drawf.selected(other, Tmp.c1.set(baseColor).a(Mathf.absin(4f, 1f))));
+            Drawf.dashCircle(x, y, realRange, baseColor);
         }
     }
 }

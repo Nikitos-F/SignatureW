@@ -1,0 +1,225 @@
+{
+  "type": "ItemTurret",
+
+
+  "absorbLasers": true,
+  "underBullets": false,
+  "flammabilityScale": 0.01,
+
+  "armor": 8,
+  "health": 1920,
+  "size": 4,
+
+  "category": "turret",
+  "requirements": [
+    "korium-1/160",
+    "graphite/280",
+    "silicon/180",
+    "surge-alloy/180",
+    "titanium/280",
+  ],
+
+
+  "targetGround": true,
+  "targetAir": true,
+
+  "rotateSpeed": 1.75,
+  "range": 380,
+
+  "predictTarget": false,
+
+  "reload": 320,
+  "inaccuracy": 3,
+
+  "ammoTypes": {
+
+    "thorium": {
+      "type": "MissileBulletType",
+
+      "knockback": 3.5,
+
+      "shrinkY": 0,
+
+      "height": 18,
+      "width": 8,
+
+      "reloadMultiplier": 0.4,
+      "ammoMultiplier": 1,
+      "rangeChange": 160,
+
+
+      "homingPower": 0.02,
+      "homingRange": 80,
+      "homingDelay": 5,
+      "lifetime": 20,
+
+      "damage": 800,
+      "speed": 30,
+
+      "smokeEffect": {
+        "type": "ParticleEffect",
+
+        "baseRotation": 180,
+        "offsetX": 30,
+
+        "interp": "pow5Out",
+        "particles": 15,
+        "cone": 9,
+        "lifetime": 160,
+        "baseLength": 0,
+        "length": 80,
+        "sizeFrom": 6,
+        "sizeTo": 0,
+        "colorFrom": "F595BEA0",
+        "colorTo": "E585AE00"
+      },
+
+      "lightColor": "F595BE",
+      "lightOpacity": 0.7,
+      "lightRadius": 32.5,
+
+
+      "hitColor": "F595BE",
+      "trailColor": "F595BE",
+      "backColor": "F595BE",
+      "frontColor": "F595BE",
+
+      "trailLength": 75,
+      "trailWidth": 1.75
+    },
+
+    "surge-alloy": {
+      "type": "MissileBulletType",
+
+      "shrinkY": 0,
+
+      "height": 16,
+      "width": 7,
+
+
+      "homingPower": 0.5,
+      "homingRange": 40,
+      "homingDelay": 0,
+      "lifetime": 28,
+
+      "damage": 160,
+      "splashDamageRadius": 24,
+      "splashDamage": 220,
+      "speed": 13,
+      "reloadMultiplier": 1.35,
+
+      "intervalBullets": 2,
+      "intervalSpread": 0,
+      "intervalAngle": 15,
+      "intervalRandomSpread": 15,
+      "bulletInterval": 6,
+
+      "intervalBullet": {
+        "type": "MissileBulletType",
+
+        "height": 8,
+        "width": 3,
+
+        "homingPower": 0.5,
+        "homingRange": 40,
+        "homingDelay": 0,
+        "lifetime": 22,
+        "speed": 8,
+
+        "damage": 80,
+
+        "status": "electrified",
+        "statusDuration": 10,
+
+        "lightColor": "F595BE",
+        "lightOpacity": 0.7,
+        "lightRadius": 32.5,
+
+        "hitColor": "F3E979",
+        "trailColor": "F3E979",
+        "backColor": "F3E979",
+        "frontColor": "FFFFFF",
+
+        "trailLength": 10,
+        "trailWidth": 0.75
+      },
+
+
+      "status": "electrified",
+      "statusDuration": 40,
+
+      "smokeEffect": {
+            "type": "ParticleEffect",
+
+            "baseRotation": 180,
+            "offsetX": 30,
+
+            "interp": "pow5Out",
+            "particles": 11,
+            "cone": 9,
+            "lifetime": 160,
+            "baseLength": 0,
+            "length": 80,
+            "sizeFrom": 6,
+            "sizeTo": 0,
+            "colorFrom": "FFFFFFA0",
+            "colorTo": "F3E97900"
+          },
+
+      "lightColor": "F595BE",
+      "lightOpacity": 0.7,
+      "lightRadius": 32.5,
+
+
+      "hitColor": "F3E979",
+      "trailColor": "F3E979",
+      "backColor": "F3E979",
+      "frontColor": "FFFFFF",
+
+      "trailLength": 30,
+      "trailWidth": 1.25
+    }
+  },
+
+  "ammoPerShot": 9,
+  "maxAmmo": 27,
+
+  "shoot": {
+    "type": "ShootBarrel",
+    "barrels": [
+      -5, -1.5, 0,
+      5, -1.5, 0,
+      0, -1.5, 0,
+    ],
+    "shots": 3,
+    "shotDelay": 18
+  },
+
+
+  "shake": 3.5,
+  "recoil": 4,
+  "recoils": 3,
+
+  "drawer": {
+    "type": "DrawTurret",
+    "parts": [
+      {"type": "RegionPart","suffix": "-barrel-1","progress": "reload","recoilIndex": 0,"moveY": -10.0,
+        "moves": [{"progress": "recoil", "y": -10}, {"progress": "reload", "y": 10}]},
+
+      {"type": "RegionPart", "suffix": "-barrel-2", "progress": "reload", "recoilIndex": 2, "moveY": -12.0,
+        "moves": [{"progress": "recoil", "y": -12}, {"progress": "reload", "y": 12}]},
+
+      {"type": "RegionPart", "suffix": "-barrel-3", "progress": "reload", "recoilIndex": 1, "moveY": -10.0,
+        "moves": [{"progress": "recoil", "y": -10}, {"progress": "reload", "y": 10}]},
+
+      {"type": "RegionPart", "suffix": "-plane-1", "heatProgress": "recoil", "recoilIndex": 0,"heatColor": "DB6464"},
+      {"type": "RegionPart", "suffix": "-plane-2", "heatProgress": "recoil", "recoilIndex": 2,"heatColor": "DB6464"},
+      {"type": "RegionPart", "suffix": "-plane-3", "heatProgress": "recoil", "recoilIndex": 1,"heatColor": "DB6464"},
+      {"type": "RegionPart", "suffix": "-main",}
+    ]
+  },
+
+  "ammoUseEffect": "none",
+  "shootSound": "shootMissile",
+  "shootSoundVolume": 2
+}

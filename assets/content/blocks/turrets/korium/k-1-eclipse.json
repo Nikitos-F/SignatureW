@@ -1,0 +1,348 @@
+{
+  "type": "ItemTurret",
+
+
+  "absorbLasers": true,
+  "underBullets": false,
+  "flammabilityScale": 0.01,
+
+  "armor": 8,
+  "health": 1320,
+  "size": 3,
+
+  "category": "turret",
+  "requirements": [
+    "korium-1/60",
+    "graphite/130",
+    "silicon/90",
+  ],
+
+
+  "targetGround": true,
+  "targetAir": false,
+
+  "rotateSpeed": 4,
+  "range": 360,
+  "minRange": 120,
+
+  "drawMinRange": true,
+  "predictTarget": true,
+
+  "reload": 220,
+  "inaccuracy": 2,
+
+  "ammoTypes": {
+
+    "graphite": {
+      "type": "ArtilleryBulletType",
+
+      "lifetime": 80,
+      "ammoMultiplier": 3,
+
+      "speed": 3.5,
+
+      "damage": 110,
+      "splashDamageRadius": 40,
+      "splashDamage": 110,
+
+      "reloadMultiplier": 1.15,
+
+      "fragBullets": 11,
+      "fragRandomSpread": 40,
+
+      "fragBullet": {
+        "type": "BasicBulletType",
+
+        "damage": 60,
+        "speed": 5,
+        "lifetime": 10,
+        "knockback": 1.5,
+
+        "width": 4,
+        "height": 4,
+        "backColor": "b9c9df",
+        "frontColor": "b9c9df",
+        "hitEffect": "hitBulletColor",
+        "despawnEffect": "hitBulletColor"
+      },
+      "width": 12,
+      "height": 14,
+      "backColor": "6e7080",
+      "hitColor": "6e7080",
+      "trailColor": "b2c6d2",
+      "frontColor": "b2c6d2",
+
+      "hitEffect": "none",
+
+      "despawnEffect": {
+        "type": "multiEffect",
+        "effects": [
+          {
+            "type": "ExplosionEffect",
+            "lifetime": 68,
+            "waveStroke": 1.5,
+            "waveRad": 40,
+            "waveLife": 12,
+            "smokeRad": 20,
+            "smokeSizeBase": 0,
+            "smokeSize": 16,
+            "smokes": 4,
+            "sparks": 0
+          },
+          {
+            "type": "ParticleEffect",
+            "line": true,
+            "interp": "pow2Out",
+            "particles": 8,
+            "cone": 360,
+            "lifetime": 40,
+            "baseLength": 0,
+            "length": 60,
+            "strokeFrom": 3,
+            "strokeTo": 0,
+            "lenFrom": 3,
+            "lenTo": 1,
+            "colorFrom": "6e7080",
+            "colorTo": "6e7080"
+          }
+        ]
+      },
+      "shootEffect": {
+        "type": "multiEffect",
+        "effects": [
+          {
+            "type": "ExplosionEffect",
+            "lifetime": 112,
+            "waveStroke": 1.5,
+            "waveRad": 40,
+            "waveLife": 12,
+            "smokeRad": 20,
+            "smokeSizeBase": 0,
+            "smokeSize": 18,
+            "smokes": 4,
+            "sparks": 0
+          },
+          {
+            "type": "ParticleEffect",
+            "line": true,
+            "interp": "pow5Out",
+            "particles": 9,
+            "cone": 20,
+            "lifetime": 80,
+            "baseLength": 0,
+            "length": 60,
+            "strokeFrom": 3,
+            "strokeTo": 0,
+            "lenFrom": 3,
+            "lenTo": 0,
+            "colorFrom": "6e7080",
+            "colorTo": "6e7080"
+          }
+        ]
+      },
+      "smokeEffect": "shootSmokeSquareSparse",
+      "trailLength": 4.5,
+      "trailWidth": 3.5,
+      "lightColor": "b2c6d2"
+    },
+
+    "korium-1": {
+      "type": "ArtilleryBulletType",
+
+      "lifetime": 80,
+      "ammoMultiplier": 1,
+      "reloadMultiplier": 0.8,
+      "speed": 3,
+      "damage": 210,
+      "splashDamageRadius": 62,
+      "splashDamage": 280,
+      "status": "melting",
+      "makeFire": true,
+      "width": 12,
+      "height": 14,
+      "backColor": "DB6464",
+      "hitColor": "DB6464",
+      "frontColor": "DB6464",
+      "trailLength": 2.5,
+      "trailWidth": 2,
+      "trailColor": "DB6464",
+      "lightColor": "DB6464",
+
+      "hitEffect": "none",
+
+      "despawnEffect": {
+        "type": "multiEffect",
+        "effects": [
+          {
+            "type": "ExplosionEffect",
+            "lifetime": 142,
+
+            "waveColor": "DB6464",
+            "waveStroke": 2,
+            "waveRad": 62,
+            "waveLife": 16,
+
+            "smokeRad": 56,
+            "smokeSizeBase": 0,
+            "smokeSize": 18,
+            "smokeColor": "AC2C2C80",
+            "smokes": 6,
+            "sparks": 0
+          },
+          {
+            "type": "ExplosionEffect",
+            "lifetime": 200,
+            "waveRad": 0,
+
+            "smokeRad": 44,
+            "smokeSizeBase": 0,
+            "smokeSize": 14,
+            "smokeColor": "DB646460",
+            "smokes": 6,
+            "sparks": 0
+          },
+          {
+            "type": "ParticleEffect",
+            "line": true,
+            "interp": "pow5Out",
+            "particles": 24,
+            "cone": 360,
+            "lifetime": 60,
+            "baseLength": 0,
+            "length": 60,
+            "strokeFrom": 5,
+            "strokeTo": 0,
+            "lenFrom": 5,
+            "lenTo": 0,
+            "colorFrom": "DB6464",
+            "colorTo": "AC2C2C"
+          }
+        ]
+      },
+
+      "shootEffect": {
+        "type": "multiEffect",
+        "effects": [
+          {
+            "type": "ExplosionEffect",
+            "lifetime": 112,
+
+            "waveColor": "DB6464",
+            "waveStroke": 2,
+            "waveRad": 68,
+            "waveLife": 20,
+
+            "smokeRad": 28,
+            "smokeSizeBase": 0,
+            "smokeSize": 18,
+            "smokeColor": "AC2C2C80",
+            "smokes": 6,
+            "sparks": 0
+          },
+          {
+            "type": "ExplosionEffect",
+            "lifetime": 182,
+            "waveRad": 0,
+
+            "smokeRad": 44,
+            "smokeSizeBase": 0,
+            "smokeSize": 16,
+            "smokeColor": "DB646440",
+            "smokes": 6,
+            "sparks": 0
+          },
+          {
+            "type": "ParticleEffect",
+            "line": true,
+            "interp": "pow5Out",
+            "particles": 18,
+            "cone": 360,
+            "lifetime": 80,
+            "baseLength": 0,
+            "length": 60,
+            "strokeFrom": 3,
+            "strokeTo": 0,
+            "lenFrom": 3,
+            "lenTo": 0,
+            "colorFrom": "DB6464",
+            "colorTo": "AC2C2C"
+          },
+          "shootPyraFlame"
+        ]
+      },
+      "smokeEffect": "shootSmokeSquareSparse"
+    }
+  },
+
+  "ammoPerShot": 2,
+  "maxAmmo": 10,
+
+  "shoot": {
+    "type": "ShootBarrel",
+    "barrels": [
+      0, -2, 0
+    ]
+  },
+
+  "shake": 3,
+  "recoil": 1,
+
+  "drawer": {
+    "type": "DrawTurret",
+    "parts": [
+      {
+        "type": "RegionPart",
+        "suffix": "-head-lower",
+
+        "progress": "reload",
+        "moveY": -1.0
+      },
+      {
+        "type": "RegionPart",
+        "suffix": "-compensator-2",
+        "mirror": true,
+
+        "progress": "recoil",
+        "moveY": -2.5,
+        "moveX": -0.5,
+        "moveRot": 20,
+
+        "heatProgress": "recoil",
+        "heatColor": "DB6464"
+      },
+
+      {
+        "type": "RegionPart",
+        "suffix": "-compensator-1",
+        "mirror": true,
+
+        "progress": "reload",
+        "moveY": -1.25,
+        "moveX": 2.5,
+        "moveRot": -45
+      },
+
+      {
+        "type": "RegionPart",
+        "suffix": "-main",
+
+        "progress": "recoil",
+        "moveY": -2.25,
+
+        "heatProgress": "recoil",
+        "heatColor": "DB6464"
+      },
+      {
+        "type": "RegionPart",
+        "suffix": "-head-upper",
+
+        "progress": "reload",
+        "moveY": -2.5
+      }
+    ]
+  },
+
+  "ammoUseEffect": "none",
+  "shootSound": "shootRipple",
+  "shootSoundVolume": 2
+}

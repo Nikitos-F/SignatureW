@@ -1,0 +1,29 @@
+{
+	"type": "ParticleWeather",
+
+
+	"status": "ephyrite-exhaustion",
+	"force": 0,
+	"attrs": {
+		"light": 3.4
+	},
+
+
+	"sizeMax": 6,
+	"sizeMin": 1,
+	"yspeed": 0.25,
+	"minAlpha": 0.2,
+	"density": 8000,
+	"color": "64DBDB",
+	"particleRegion": "particle",
+
+	"drawNoise": true,
+	"noiseColor": "4A8ACA",
+	"useWindVector": false,
+	"noiseLayers": 3,
+	"noiseLayerSpeedM": 0.1,
+	"opacityMultiplier": 0.45,
+
+	"soundVol": 0.25,
+	"sound": "loopGlow",
+}
