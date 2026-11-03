@@ -1,0 +1,31 @@
+{
+    "type": "signatureW.blocks.production.HeatDrill",
+    "absorbLasers": true,
+    "underBullets": false,
+    "flammabilityScale": 0.01,
+    "health": 3800,
+    "size": 4,
+    "category": "production",
+    "requirements": [
+        "titanium/180",
+        "silicon/120",
+        "thorium/160",
+        "surge-alloy/120",
+        "korium-1/90"
+    ],
+    "blockedItem": "ephyrite-0",
+    "drillMultipliers": {
+        "korium-0": 1.25
+    },
+    "tier": 6,
+    "drillTime": 200,
+    "itemCapacity": 60,
+    "hasLiquids": false,
+    "arrows": 2,
+    "consumes": {
+        "power": 5
+    },
+    "emitLight": true,
+    "lightRadius": 5,
+    "lightColor": "DB6464"
+}

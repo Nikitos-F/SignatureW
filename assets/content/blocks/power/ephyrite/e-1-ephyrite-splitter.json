@@ -1,0 +1,90 @@
+{
+  "type": "NuclearReactor",
+  "absorbLasers": true,
+  "underBullets": false,
+  "size": 3,
+  "health": 2800,
+  "category": "power",
+  "requirements": [
+    "ephyrite-1/65",
+    "plastanium/180",
+    "silicon/280",
+    "surge-alloy/85"
+  ],
+  "fuelItem": "ephyrite-0",
+  "consumes": {
+    "liquid": "cryofluid/0.08",
+    "items": [
+      "ephyrite-0/1"
+    ]
+  },
+  "lightColor": "64DBDB",
+  "lightRadius": 18,
+  "itemCapacity": 10,
+  "liquidCapacity": 120,
+  "itemDuration": 420,
+  "powerProduction": 48,
+  "heating": 0.005,
+  "smokeThreshold": 0.15,
+  "flashThreshold": 0.74,
+  "explodeSound": "explosionReactorNeoplasm",
+  "explosionShake": 10,
+  "explosionRadius": 21,
+  "explosionDamage": 5500,
+
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "DrawRegion",
+        "suffix": "-bottom"
+      },
+      {
+        "type": "DrawLiquidTile",
+        "drawLiquid": "cryofluid"
+      },
+      {
+        "type": "DrawDefault"
+      }
+    ]
+  },
+
+  "explodeEffect": {
+    "type": "multiEffect",
+    "effects": [
+      {
+        "type": "ExplosionEffect",
+        "lifetime": 120,
+        "waveColor": "64DBDB",
+        "waveStroke": 1.25,
+        "waveRad": 240,
+        "waveLife": 30,
+        "smokeColor": "64DBDB",
+        "smokeRad": 120,
+        "smokeSizeBase": 0.5,
+        "smokeSize": 48,
+        "smokes": 10,
+        "sparkColor": "4A8ACA",
+        "sparkStroke": 2,
+        "sparkRad": 180,
+        "sparkLen": 12,
+        "sparks": 18
+      },
+      {
+        "type": "ExplosionEffect",
+        "lifetime": 280,
+        "waveColor": "64DBDB",
+        "waveStroke": 0,
+        "waveRad": 0,
+        "smokeColor": "4A8ACA70",
+        "smokeRad": 190,
+        "smokeSizeBase": 0.5,
+        "smokeSize": 120,
+        "smokes": 11,
+        "sparks": 0
+      }
+    ]
+  },
+  "ambientSound": "loopHum",
+  "ambientSoundVolume": 0.26
+}

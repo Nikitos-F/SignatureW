@@ -18,6 +18,7 @@ public class HeatDrill extends BurstDrill {
     public float heatRequirement = 10f;
     public float overheatScale = 1f;
     public float maxEfficiency = 2f;
+    public float baseEfficicency = 0.2f;
 
 
     public TextureRegion heatRegion;
@@ -58,16 +59,18 @@ public class HeatDrill extends BurstDrill {
         public float[] sideHeat = new float[4];
         public float heat = 0f;
 
+        private float RealNaxEfficiency = maxEfficiency - baseEfficicency;
+        private float MinHeat = baseEfficicency * heatRequirement;
+
         @Override
         public void updateTile(){
-            heat = calculateHeat(sideHeat);
+            heat = calculateHeat(sideHeat) + MinHeat;
             super.updateTile();
         }
 
-        @Override
         public float efficiencyScale(){
             float over = Math.max(heat - heatRequirement, 0f);
-            return Math.min(Mathf.clamp((heat+heatRequirement*0.1f) / heatRequirement) + over / heatRequirement * overheatScale, maxEfficiency);
+            return Math.min(Mathf.clamp(heat / heatRequirement) + over / heatRequirement * overheatScale, maxEfficiency);
         }
 
         @Override

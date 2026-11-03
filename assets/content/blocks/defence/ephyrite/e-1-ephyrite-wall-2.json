@@ -1,0 +1,29 @@
+{
+    "type": "signatureW.blocks.defense.ShieldedWall",
+
+
+    "absorbLasers": true,
+    "underBullets": false,
+
+    "size": 2,
+    "health": 3060,
+
+    "category": "defense",
+    "requirements": [
+        "ephyrite-1/8",
+        "plastanium/32"
+    ],
+
+    "armor": 16,
+
+    "shieldHealth": 3060,
+    "radius": 16,
+    "sides": 24,
+    "conductivePower": true,
+    "cooldownNormal": 1.25,
+    "cooldownBrokenBase": 2,
+
+    "consumes": {
+        "power": 4
+    }
+}

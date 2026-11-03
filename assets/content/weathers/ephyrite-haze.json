@@ -4,10 +4,10 @@
 
 	"status": "ephyrite-exhaustion",
 	"force": 0,
+
 	"attrs": {
 		"light": 3.4
 	},
-
 
 	"sizeMax": 6,
 	"sizeMin": 1,

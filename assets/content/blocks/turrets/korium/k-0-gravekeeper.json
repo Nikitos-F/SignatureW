@@ -1,0 +1,128 @@
+{
+  "type": "ItemTurret",
+
+
+  "absorbLasers": true,
+  "underBullets": false,
+  "flammabilityScale": 0.01,
+
+  "armor": 8,
+  "health": 1480,
+  "size": 2,
+
+  "category": "turret",
+  "requirements": [
+    "korium-0/80",
+    "titanium/120",
+    "graphite/90"
+  ],
+
+  "targetGround": true,
+  "targetAir": false,
+  "rotateSpeed": 9,
+  "range": 136,
+  "reload": 45,
+  "inaccuracy": 2.5,
+
+  "ammoTypes": {
+
+    "graphite": {
+      "type": "BasicBulletType",
+
+      "speed": 9,
+      "lifetime": 20,
+      "ammoMultiplier": 2,
+      "damage": 25,
+      "knockback": 0.5,
+      "width": 9,
+      "height": 16,
+      "backColor": "6e7080",
+      "hitColor": "6e7080",
+      "trailColor": "b2c6d2",
+      "frontColor": "b2c6d2",
+      "hitEffect": "hitBulletColor",
+      "despawnEffect": "hitBulletColor",
+      "shootEffect": "none",
+      "smokeEffect": "shootSmokeSquareSparse",
+      "trailLength": 5.5,
+      "trailWidth": 2
+    },
+
+    "pyratite": {
+      "type": "BasicBulletType",
+
+      "speed": 9,
+      "lifetime": 20,
+      "ammoMultiplier": 3,
+      "damage": 18,
+      "status": "burning",
+      "statusDuration": 960,
+      "makeFire": true,
+      "armorMultiplier": 1.7,
+      "width": 8,
+      "height": 16,
+      "backColor": "F68021",
+      "hitColor": "F68021",
+      "trailColor": "F68021",
+      "frontColor": "F68021",
+      "hitEffect": "fireHit",
+      "despawnEffect": "fireHit",
+      "trailEffect": "fireHit",
+      "trailChance": 0.35,
+      "trailSpread": 2,
+      "shootEffect": "shootSmallFlame",
+      "smokeEffect": "shootSmokeSquareSparse"
+    },
+
+    "korium-0": {
+      "type": "BasicBulletType",
+
+      "speed": 9,
+      "lifetime": 20,
+      "ammoMultiplier": 1,
+      "damage": 20,
+      "status": "melting",
+      "makeFire": true,
+      "armorMultiplier": 1.5,
+      "width": 10,
+      "height": 20,
+      "splashDamageRadius": 12,
+      "splashDamage": 10,
+      "backColor": "DB6464",
+      "hitColor": "DB6464",
+      "trailColor": "DB6464",
+      "frontColor": "DB6464",
+      "hitEffect": "shootSmallFlame",
+      "despawnEffect": "fireHit",
+      "trailEffect": "fireHit",
+      "trailChance": 0.8,
+      "trailSpread": 8,
+      "shootEffect": "shootPyraFlame",
+      "smokeEffect": "shootSmokeSquareSparse"
+    }
+  },
+
+  "shake": 2,
+  "recoil": 0.5,
+  "recoilTime": 60,
+
+  "shoot": {
+    "type": "ShootSpread",
+    "shots": 15,
+    "spread": 1.4
+  },
+
+  "drawer": {
+    "type": "drawTurret",
+    "parts": [
+      {"type": "RegionPart", "suffix": "-barrel", "progress": "recoil", "moveY": -2, "heatProgress": "recoil", "heatColor": "DB6464"},
+      {"type": "RegionPart", "suffix": "-main"},
+      {"type": "RegionPart", "suffix": "-wing",
+        "mirror": true,
+        "progress": "recoil", "moveY": -2, "moveX": 1.75, "moveRot": 25}
+    ]
+  },
+  "ammoUseEffect": "casing2",
+  "shootSound": "shootDiffuse",
+  "shootSoundVolume": 1.5
+}

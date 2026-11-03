@@ -12,10 +12,10 @@
 
   "category": "turret",
   "requirements": [
-    "korium-1/160",
-    "graphite/280",
-    "silicon/180",
-    "surge-alloy/180",
+    "korium-1/90",
+    "graphite/240",
+    "silicon/120",
+    "surge-alloy/100",
     "titanium/280",
   ],
 
@@ -110,7 +110,7 @@
 
       "intervalBullets": 2,
       "intervalSpread": 0,
-      "intervalAngle": 15,
+      "intervalAngle": 0,
       "intervalRandomSpread": 15,
       "bulletInterval": 6,
 
@@ -127,6 +127,7 @@
         "speed": 8,
 
         "damage": 80,
+        "pierceCap": 2,
 
         "status": "electrified",
         "statusDuration": 10,
@@ -174,6 +175,78 @@
       "hitColor": "F3E979",
       "trailColor": "F3E979",
       "backColor": "F3E979",
+      "frontColor": "FFFFFF",
+
+      "trailLength": 30,
+      "trailWidth": 1.25
+    },
+
+    "metaglass": {
+      "type": "MissileBulletType",
+
+      "knockback": 3.5,
+
+      "shrinkY": 0,
+
+      "height": 18,
+      "width": 8,
+
+      "reloadMultiplier": 1.4,
+      "ammoMultiplier": 1,
+
+
+      "homingPower": 0.5,
+      "homingRange": 40,
+      "homingDelay": 0,
+      "lifetime": 28,
+
+      "damage": 240,
+      "speed": 13,
+      "splashDamageRadius": 24,
+      "splashDamage": 80,
+
+      "fragBullets": 9,
+      "fragSpread": 180,
+      "fragRandomSpread": 180,
+      "fragBullet": {
+        "type": "BasicBulletType",
+        "damage": 80,
+        "pierceCap": 2,
+        "lifetime": 20,
+        "width": 4,
+        "height": 6,
+        "backColor": "454545",
+        "frontColor": "FFFFFF",
+        "hitEffect": "hitBulletColor",
+        "despawnEffect": "hitBulletColor"
+      },
+
+      "smokeEffect": {
+        "type": "ParticleEffect",
+
+        "baseRotation": 180,
+        "offsetX": 30,
+
+        "interp": "pow5Out",
+        "particles": 15,
+        "cone": 9,
+        "lifetime": 160,
+        "baseLength": 0,
+        "length": 80,
+        "sizeFrom": 6,
+        "sizeTo": 0,
+        "colorFrom": "FFFFFFA0",
+        "colorTo": "45454500"
+      },
+
+      "lightColor": "FFFFFF",
+      "lightOpacity": 0.5,
+      "lightRadius": 32.5,
+
+
+      "hitColor": "FFFFFF",
+      "trailColor": "FFFFFF",
+      "backColor": "454545",
       "frontColor": "FFFFFF",
 
       "trailLength": 30,

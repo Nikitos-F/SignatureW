@@ -1,0 +1,11 @@
+{
+  "type": "signatureW.blocks.environment.AttributeOre",
+  "itemDrop": "ephyrite-0",
+  "oreDefault": true,
+  "oreScale": 40,
+  "oreThreshold": 0.93,
+  "variants": 4,
+  "emitLight": true,
+  "lightRadius": 14,
+  "lightColor": "64DBDB40"
+}
