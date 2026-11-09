@@ -12,10 +12,10 @@
 
   "category": "turret",
   "requirements": [
-    "korium-1/90",
+    "korium-1/110",
     "graphite/240",
     "silicon/120",
-    "surge-alloy/100",
+    "surge-alloy/120",
     "titanium/280",
   ],
 
@@ -45,7 +45,7 @@
 
       "reloadMultiplier": 0.4,
       "ammoMultiplier": 1,
-      "rangeChange": 160,
+      "rangeChange": 80,
 
 
       "homingPower": 0.02,

@@ -23,10 +23,10 @@
     "type": "DrawMulti",
     "drawers": [
       {"type": "DrawDefault"},
-      {"type": "DrawHeatOutput,", "rotOffset": -1, "drawGlow": false},
+      {"type": "DrawHeatOutput", "rotOffset": -1, "drawGlow": false},
       {"type": "DrawHeatOutput"},
-      {"type": "DrawHeatOutput,", "rotOffset": 1, "drawGlow": false},
-      {"type": "DrawHeatInput,", "suffix": "-heat"}
+      {"type": "DrawHeatOutput", "rotOffset": 1, "drawGlow": false},
+      {"type": "DrawHeatInput", "suffix": "-heat"}
     ]
   },
 

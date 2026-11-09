@@ -23,7 +23,7 @@
   "itemCapacity": 10,
   "liquidCapacity": 120,
   "itemDuration": 420,
-  "powerProduction": 48,
+  "powerProduction": 55,
   "heating": 0.005,
   "smokeThreshold": 0.15,
   "flashThreshold": 0.74,

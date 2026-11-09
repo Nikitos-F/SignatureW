@@ -12,9 +12,9 @@
 
   "category": "turret",
   "requirements": [
-    "korium-1/420",
+    "korium-1/380",
     "graphite/720",
-    "surge-alloy/520",
+    "surge-alloy/480",
     "thorium/520",
     "silicon/340"
   ],

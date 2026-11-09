@@ -6,11 +6,11 @@
   "size": 3,
   "category": "turret",
   "requirements": [
-    "silicon/250",
-    "ephyrite-1/100",
+    "silicon/180",
+    "ephyrite-1/70",
     "plastanium/120",
-    "graphite/180",
-    "surge-alloy/120"
+    "graphite/120",
+    "surge-alloy/80"
   ],
   "consumes": {
     "power": 22,
@@ -21,7 +21,7 @@
   "targetGround": true,
   "targetAir": true,
   "predictTarget": true,
-  "range": 312,
+  "range": 336,
   "minRange": 48,
   "drawMinRange": true,
   "rotateSpeed": 5,
@@ -35,10 +35,11 @@
     "type": "BasicBulletType",
     "damage": 70,
     "shieldDamageMultiplier": 5.25,
+    "buildingDamageMultiplier": 0.1,
     "splashDamageRadius": 64,
     "splashDamagePierce": true,
     "splashDamage": 50,
-    "knockback": 2.5,
+    "knockback": 5.5,
     "impact": true,
     "status": "electrified",
     "hittable": false,

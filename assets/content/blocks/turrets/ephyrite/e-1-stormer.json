@@ -10,10 +10,10 @@
 
     "category": "turret",
     "requirements": [
-        "silicon/220",
-        "ephyrite-1/90",
-        "plastanium/160",
-        "graphite/180"
+        "silicon/160",
+        "ephyrite-1/80",
+        "plastanium/140",
+        "titanium/180"
     ],
 
     "consumes": {

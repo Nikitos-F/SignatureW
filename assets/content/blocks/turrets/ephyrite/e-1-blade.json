@@ -11,7 +11,8 @@
     "category": "turret",
     "requirements": [
         "silicon/90",
-        "ephyrite-1/60",
+        "ephyrite-1/40",
+        "phase-fabric/60",
         "plastanium/120"
     ],
 
