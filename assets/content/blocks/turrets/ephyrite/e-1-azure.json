@@ -13,7 +13,7 @@
     "surge-alloy/80"
   ],
   "consumes": {
-    "power": 22,
+    "power": 18,
     "coolant": {
       "amount": 0.35
     }
