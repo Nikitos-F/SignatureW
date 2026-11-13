@@ -15,11 +15,35 @@ public class OptionalHeatCrafter extends HeatCrafter {
 
     public float baseEfficicency = 0.2f;
 
+    public Attribute attribute = Attribute.heat;
+    public float maxBoost = 5f;
+    public boolean displayEfficiency = true, displayScaledOutput = true;
+    public float outputScale = 0f;
+    public float boostScale = 0.12f;
+
     public OptionalHeatCrafter(String name) {
         super(name);
     }
 
+    @Override
+    public void drawPlace(int x, int y, int rotation, boolean valid){
+        super.drawPlace(x, y, rotation, valid);
+
+        if((!displayEfficiency || boostScale <= 0f) && (!displayScaledOutput || outputScale <= 0f)) return;
+
+        drawPlaceText(
+                (displayEfficiency && boostScale > 0f ?
+                        Core.bundle.format("bar.efficiency", (int)((1f + Math.min(maxBoost, boostScale * sumAttribute(attribute, x, y))) * 100f))
+                        : "") +
+                        (displayScaledOutput && outputScale > 0f ?
+                                "\n" + Core.bundle.format("bar.yield", (int)((1f + Math.min(maxBoost, outputScale * sumAttribute(attribute, x, y))) * 100f))
+                                : ""), x, y, valid);
+    }
+
+
+
     public class OptionalHeatCrafterBuild extends HeatCrafterBuild {
+        public float attrsum;
 
         private float RealNaxEfficiency = maxEfficiency - baseEfficicency;
         private float MinHeat = baseEfficicency * heatRequirement;
@@ -58,8 +82,22 @@ public class OptionalHeatCrafter extends HeatCrafter {
 
         @Override
         public float efficiencyScale(){
+            float heatFraction = Mathf.clamp(heat / heatRequirement);
             float over = Math.max(heat - heatRequirement, 0f);
-            return Math.min(Mathf.clamp(heat / heatRequirement) + over / heatRequirement * overheatScale, maxEfficiency);
+            float heatBonus = Math.min(heatFraction + over / heatRequirement * overheatScale, maxEfficiency);
+            return heatBonus + sumAttribute(attribute, tile.x, tile.y) * boostScale;
+        }
+
+        @Override
+        public void pickedUp(){
+            attrsum = 0f;
+            warmup = 0f;
+        }
+
+        @Override
+        public void onProximityUpdate(){
+            super.onProximityUpdate();
+            attrsum = sumAttribute(attribute, tile.x, tile.y);
         }
 
     }
