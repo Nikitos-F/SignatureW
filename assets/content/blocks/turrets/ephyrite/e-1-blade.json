@@ -11,9 +11,9 @@
     "category": "turret",
     "requirements": [
         "silicon/90",
-        "ephyrite-1/40",
+        "ephyrite-1/30",
         "phase-fabric/60",
-        "plastanium/120"
+        "plastanium/90"
     ],
 
     "consumes": {
@@ -21,9 +21,9 @@
     },
 
     "range": 200,
-    "rotateSpeed": 12,
+    "rotateSpeed": 10,
     "shootLength": 1,
-    "bulletDamage": 40,
+    "bulletDamage": 50,
     "reload": 2,
 
 

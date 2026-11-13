@@ -11,7 +11,7 @@
     ],
     "armor": 16,
     "shieldHealth": 765,
-    "radius": 12,
+    "radius": 18,
     "sides": 24,
     "conductivePower": true,
     "cooldownNormal": 0.6,
