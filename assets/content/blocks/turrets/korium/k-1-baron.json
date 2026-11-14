@@ -1,5 +1,5 @@
 {
-  "type": "ItemTurret",
+  "type": "signatureW.blocks.turrets.korium.KoriumItemTurret",
 
 
   "absorbLasers": true,
@@ -79,7 +79,7 @@
           "smokeSizeBase": 0.5,
           "smokeSize": 2.5,
           "smokes": 1,
-          "sparks": 1,
+          "sparks": 1
         },
         "hitEffect": {
           "type": "ExplosionEffect",
@@ -92,7 +92,7 @@
           "smokeSizeBase": 0.5,
           "smokeSize": 2.5,
           "smokes": 1,
-          "sparks": 1,
+          "sparks": 1
         },
         "frontColor": "b9c9df",
 
@@ -316,7 +316,7 @@
           "smokeSizeBase": 0.5,
           "smokeSize": 2.5,
           "smokes": 1,
-          "sparks": 1,
+          "sparks": 1
         },
         "hitEffect": {
           "type": "ExplosionEffect",
@@ -329,7 +329,7 @@
           "smokeSizeBase": 0.5,
           "smokeSize": 2.5,
           "smokes": 1,
-          "sparks": 1,
+          "sparks": 1
         },
         "frontColor": "707594",
 
@@ -698,7 +698,7 @@
     "parts": [
       {
         "type": "RegionPart", "suffix": "-lower-head",
-        "progress": "recoil", "moveY": -2.5,
+        "progress": "recoil", "moveY": -2.5
       },
       {
         "type": "RegionPart",
@@ -710,7 +710,7 @@
         [
           {"progress": "recoil", "y": -12},
           {"progress": "warmup", "y": 7}
-        ],
+        ]
 
       },
       {

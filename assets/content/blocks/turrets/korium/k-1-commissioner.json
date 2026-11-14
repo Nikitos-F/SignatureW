@@ -1,5 +1,5 @@
 {
-  "type": "ItemTurret",
+  "type": "signatureW.blocks.turrets.korium.KoriumItemTurret",
 
 
   "absorbLasers": true,
